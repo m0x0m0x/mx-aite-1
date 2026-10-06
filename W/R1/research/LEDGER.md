@@ -154,24 +154,36 @@ Tier **E** (blogs, SEO, aggregators, price predictions) is **excluded by policy*
 | C48 | D | CryptoNews reporting on DeFi Oasis realized-PnL analysis of Polymarket (<0.04% of addresses captured >70% of $3.7B profits) | https://cryptonews.com/news/70-of-polymarket-traders-lost-money-as-top-0-04-captured-most-profits-research/ | 2026-10-06 |
 | C49 | E | FindAS blog, "Unlocking Engagement: Cryptocurrency Points Systems" — **NOT CITED**; Hyperliquid 31%/94k-users figure left UNSOURCED | https://www.findas.org/blogs/points-systems | 2026-10-06 |
 | C50 | D | Blockchain.news aggregation of Santiment top-10 holder concentration data (unadjusted for contract wallets) | https://blockchain.news/flashnews/analysis-of-top-wallet-holdings-in-major-altcoin-markets | 2026-10-06 |
+| E1-B1 | B | The Depegging of UST — transaction-level on-chain trace of the Curve pool and Anchor outflows (Jump Crypto research) | https://jumpcrypto.com/resources/the-depegging-of-ust | 2026-10-06 |
 | E1-C1 | C | Uniswap — TVL, Fees, Revenue & Volume (DeFiLlama) | https://defillama.com/protocol/uniswap | 2026-10-06 |
-| E1-B1 | B | Depegging of UST — on-chain transaction-level trace (Jump Crypto research) | https://jumpcrypto.com/resources/the-depegging-of-ust | 2026-10-06 |
-| E1-D1 | D | Anatomy of a Run: The Terra Luna Crash (Harvard Corporate Governance Forum; Schoar, Makarov, Liu) | https://corpgov.law.harvard.edu/2023/05/22/anatomy-of-a-run-the-terra-luna-crash/ | 2026-10-06 |
+| E1-D1 | D | Anatomy of a Run: The Terra Luna Crash — Schoar, Makarov & Liu, Harvard Corporate Governance Forum | https://corpgov.law.harvard.edu/2023/05/22/anatomy-of-a-run-the-terra-luna-crash/ | 2026-10-06 |
+| E1-A2 | A | USA v. Kohli et al., Superseding Indictment, No. 24cr10189 (D. Mass.) — DOJ PDF | https://www.justice.gov/d9/2024-10/kohli_et_al._superseding_indictment_1.pdf | 2026-10-06 |
+| E1-B2 | B | Analysis – Terraform Labs' and Luna Foundation Guard's Defense of the UST Price Peg (expert report by J.S. Held / Jenner & Block, filed in litigation) | https://lfg.org/audit/LFG-Audit-2022-11-14.pdf | 2026-10-06 |
 | E1-C2 | C | Uniswap V3 — TVL, Fees, Revenue & Volume (DeFiLlama) | https://defillama.com/protocol/uniswap-v3 | 2026-10-06 |
-| E1-B2 | B | Analysis – Terraform Labs' and LFG's Defense of the UST Price Peg (Jenner & Block / expert report filed in litigation) | https://lfg.org/audit/LFG-Audit-2022-11-14.pdf | 2026-10-06 |
-| E1-A2 | A | Superseding Indictment, USA v. Kohli et al., D. Mass. (24cr10189) — DOJ PDF | https://www.justice.gov/d9/2024-10/kohli_et_al._superseding_indictment_1.pdf | 2026-10-06 |
-| E1-D2 | D | US charges 3 companies, 15 people with cryptocurrency fraud (Reuters, Nate Raymond) | https://www.reuters.com/legal/us-charges-18-people-companies-cryptocurrency-fraud-2024-10-09/ | 2026-10-06 |
-| E1-C3 | C | Uniswap V4 — TVL, Fees, Revenue & Volume (DeFiLlama) | https://defillama.com/protocol/uniswap-v4 | 2026-10-06 |
-| E1-B3 | B | Public Version – Investigation IOC-Beanstalk (Intelligence on Chain, commissioned by Beanstalk DAO) | https://img1.wsimg.com/blobby/go/84879eef-009a-49e3-bec7-d2ea2f962a66/downloads/Public%20Version%20-%20Investigation%20IOC-Beanstalk.pdf | 2026-10-06 |
-| E1-D3 | D | How did a hacker steal over $600 million from a crypto gaming blockchain? (Ars Technica) | https://arstechnica.com/gaming/2022/03/how-did-a-hacker-steal-over-600-million-from-a-crypto-gaming-blockchain/ | 2026-10-06 |
+| E1-D2 | D | US charges 3 companies, 15 people with cryptocurrency fraud — Nate Raymond, Reuters | https://www.reuters.com/legal/us-charges-18-people-companies-cryptocurrency-fraud-2024-10-09/ | 2026-10-06 |
+| E1-A3 | B | Independent Accountants' Report — USDC Reserve Report, July 8 & July 31 2026 (Circle) | https://6778953.fs1.hubspotusercontent-na1.net/hubfs/6778953/USDCAttestationReports/2026/2026%20USDC_Examination%20Report%20July%2026%20(1 | 2026-10-06 |
+| E1-B3 | B | Public Version – Investigation IOC-Beanstalk (Intelligence on Chain, commissioned by the Beanstalk DAO) | https://img1.wsimg.com/blobby/go/84879eef-009a-49e3-bec7-d2ea2f962a66/downloads/Public%20Version%20-%20Investigation%20IOC-Beanstalk.pdf | 2026-10-06 |
+| E1-C3 | C | Uniswap V4 — TVL, Fees, Revenue & Volume (DeFiLlama; states the distinct-address wash-trading exclusion rule) | https://defillama.com/protocol/uniswap-v4 | 2026-10-06 |
+| E1-D3 | D | How did a hacker steal over $600 million from a crypto gaming blockchain? — Ars Technica | https://arstechnica.com/gaming/2022/03/how-did-a-hacker-steal-over-600-million-from-a-crypto-gaming-blockchain/ | 2026-10-06 |
+| E1-A4 | B | Transparency & Stability — reserves composition, weekly disclosure, monthly assurance (Circle) | https://www.circle.com/transparency | 2026-10-06 |
+| E1-B4 | B | DeFi targeted by State Sponsored Adversaries: The Ronin Hack (Forta Network technical post-mortem) | https://forta.org/blog/ronin-hack | 2026-10-06 |
 | E1-C4 | C | Aave V3 — TVL, Fees & Revenue (DeFiLlama) | https://defillama.com/protocol/aave-v3 | 2026-10-06 |
-| E1-B4 | B | DeFi targeted by State Sponsored Adversaries: The Ronin Hack (Forta Network post-mortem) | https://forta.org/blog/ronin-hack | 2026-10-06 |
-| E1-D4 | D | Examining UST's Collapse (Galaxy Research, Alex Thorn) | https://www.galaxy.com/insights/research/examining-ust-collapse | 2026-10-06 |
-| E1-C5 | C | Aave totals: supplied/borrowed across all markets (Aavescan) | https://aavescan.com/protocol/totals | 2026-10-06 |
+| E1-D4 | D | Examining UST's Collapse — Alex Thorn, Galaxy Research | https://www.galaxy.com/insights/research/examining-ust-collapse | 2026-10-06 |
+| E1-A5 | A | SEC v. NovaTech Ltd. et al., Litigation Release No. 26072 — $650M crypto fraud | https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26072 | 2026-10-06 |
 | E1-B5 | B | Unpacking the $625M Ronin Network Heist: Independent Postmortem (LCTO) | https://articles.lcto.org/articles/unpacking-the-625m-ronin-network-heist-independent-postmortem | 2026-10-06 |
-| E1-C6 | C | Lido — TVL, Fees & Revenue (DeFiLlama) | https://defillama.com/protocol/lido | 2026-10-06 |
-| E1-C7 | C | stETH yield/holder pool page — 629.0k holders (DeFiLlama yields) | https://defillama.com/yields/pool/747c1d2a-c668-4682-b9f9-296708a3dd90 | 2026-10-06 |
-| E1-C9 | C | Arbitrum One — TVS, UOPS, risk rosette, upgrade log (L2BEAT) | https://l2beat.com/layer2s/projects/arbitrum | 2026-10-06 |
+| E1-C5 | C | Aave totals — supplied and borrowed across all markets, monthly snapshots (Aavescan) | https://aavescan.com/protocol/totals | 2026-10-06 |
+| E1-A6 | A | USA v. Lee et al. — HyperFund / HyperTech indictment, ~$1.89B securities and wire fraud (DOJ PDF) | https://www.justice.gov/criminal/media/1337526/dl?inline= | 2026-10-06 |
+| E1-B6 | B | Iron Finance Post-Mortem, 17 June 2021 (official project incident report) | https://ironfinance.medium.com/iron-finance-post-mortem-17-june-2021-6a4e9ccf23f5 | 2026-10-06 |
+| E1-C6 | C | Lido — TVL, Fees & Revenue (DeFiLlama; states the treasury/operator split methodology) | https://defillama.com/protocol/lido | 2026-10-06 |
+| E1-D6 | D | In Token Crash Postmortem, Iron Finance Says It Suffered Crypto's 'First Large-Scale Bank Run' — Kevin Reynolds, CoinDesk | https://www.coindesk.com/markets/2021/06/17/in-token-crash-postmortem-iron-finance-says-it-suffered-cryptos-first-large-scale-bank-run | 2026-10-06 |
+| E1-A7 | A | USA v. Russell Armand — Information, Saitama/VZZN market manipulation and unlicensed money transmission (DOJ PDF) | https://www.justice.gov/d9/2024-10/armand_information_0.pdf | 2026-10-06 |
+| E1-C7 | C | stETH pool — TVL and 629.0k holder count (DeFiLlama yields) | https://defillama.com/yields/pool/747c1d2a-c668-4682-b9f9-296708a3dd90 | 2026-10-06 |
+| E1-D7 | D | Analysis of the TITAN fall — Ivan Kuznetsov (independent on-chain arbitrage-profit reconstruction of the stabiliser failure) | https://jeiwan.net/posts/analysis-titan-fall/ | 2026-10-06 |
+| E1-A8 | A | USA v. Bankman-Fried — Indictment, 13 Dec 2022 (DOJ PDF) | https://www.justice.gov/d9/press-releases/attachments/2022/12/13/u.s._v._bankman-fried_indictment_0.pdf | 2026-10-06 |
+| E1-C8 | C | Total Value Secured by L2, with associated tokens excluded (L2BEAT) | https://l2beat.com/layer2s/tvs/ | 2026-10-06 |
+| E1-D8 | D | Sam Bankman-Fried convicted of multi-billion dollar FTX fraud — Luc Cohen, Jody Godoy, Reuters | https://www.reuters.com/legal/ftx-founder-sam-bankman-fried-thought-rules-did-not-apply-him-prosecutor-says-2023-11-02/ | 2026-10-06 |
+| E1-C9 | C | Arbitrum One — TVS by asset, UOPS, 38.3% trust assumptions, upgrade log (L2BEAT) | https://l2beat.com/layer2s/projects/arbitrum | 2026-10-06 |
+| E1-D9 | D | Sam Bankman-Fried trial: FTX founder convicted of fraud — Associated Press ("at least $10 billion"; **not a primary figure**) | https://apnews.com/article/sam-bankman-fried-ftx-crypto-bitcoin-baa4c94f2c4237c860475ff92e6bcf42 | 2026-10-06 |
 | E2-A1 | D | "Blockchain Lifecycle Prediction — Dead Coins", Kuehn & Adnan, arXiv:2610.01379 (preprint) — source of the >52% token-death base rate and the 0.98→0.5 | https://arxiv.org/abs/2610.01379 | 2026-10-06 |
 | E2-C1 | C | Electric Capital — **Open Dev Data** platform documentation (methodology for Monthly Active Developers, developer segments, commit fingerprinting, can | https://opendevdata.org/ | 2026-10-06 |
 | E2-D1 | D | 1kx — **Onchain Revenue Report H1 2025** (full draft): 1,244 protocols, 2020–Q3 2025; ~400 protocols >$1M annualised fees; 20 protocols >$10M value to | https://www.datocms-assets.com/65672/1761822830-1kx-revenue-report-full-draft.pdf | 2026-10-06 |
@@ -183,15 +195,36 @@ Tier **E** (blogs, SEO, aggregators, price predictions) is **excluded by policy*
 | E2-D7 | D | Bourveau, Brendel & Schoenfeld — "Decentralized Finance (DeFi) assurance: early evidence", *Review of Accounting Studies* 29, 2209–2253 (2024), open a | https://link.springer.com/article/10.1007/s11142-024-09834-8 | 2026-10-06 |
 | E2-D8 | D | David, Zhou, Qin, Song, Cavallaro & Gervais — "Do you still need a manual smart contract audit?", arXiv:2306.12338 (benchmark of 52 previously comprom | https://arxiv.org/abs/2306.12338 | 2026-10-06 |
 | E2-D9 | D | Messias, Yaish & Livshits — "Airdrops: Giving Money Away Is Harder Than It Seems", arXiv:2312.02752 (rev. 2026-08) (first comprehensive empirical stud | https://arxiv.org/abs/2312.02752 | 2026-10-06 |
-| E1-C10 | C | Total Value Secured by L2 (L2BEAT) | https://l2beat.com/layer2s/tvs/ | 2026-10-06 |
-| E1-C11 | C | Chainlink — Fees & Revenue (DeFiLlama) | https://defillama.com/protocol/chainlink | 2026-10-06 |
-| E1-C12 | C | Chainlink CCIP bridge volume (DeFiLlama bridge page) | https://defillama.com/bridge/chainlink-ccip | 2026-10-06 |
-| E1-C13 | C | Pendle — TVL, Fees, Revenue & Volume (DeFiLlama) | https://defillama.com/protocol/pendle | 2026-10-06 |
-| E1-C14 | C | State of Filecoin Q3 2025 — storage, deals, datasets, utilization (Messari/Blockworks) | https://messari.io/report/state-of-filecoin-q3-2025 | 2026-10-06 |
-| E1-C15 | C | State of Filecoin Q2 2025 — dataset onboarding, paid deals (Blockworks Intel) | https://app.blockworks.com/report/state-of-filecoin-q2-2025 | 2026-10-06 |
-| E1-C16 | C | Revisiting Beanstalk Farms Exploit (CertiK incident analysis) | https://www.certik.com/blog/revisiting-beanstalk-farms-exploit | 2026-10-06 |
-| E1-C17 | C | Cornell astrophysics simulation data archived on Filecoin via Ramo (Filecoin Foundation case note) | https://fil.org/blog/unlocking-the-cosmos-how-cornell-astrophysicist-uses-ramo-to-store-the-universe-on-filecoin | 2026-10-06 |
-| E1-C18 | C | CCIP Metrics — cumulative transfer volume and fees (Chainlink, on-chain measured) | https://www.chainlinkecosystem.com/ccip-metrics | 2026-10-06 |
+| E1-A10 | A | USA v. Andean Medjedovic — indictment, KyberSwap ~$65M and Indexed Finance ~$16.5M exploits plus attempted extortion of the DAO multisig (EDNY PDF) | https://s3.documentcloud.org/documents/26511007/2024-12-30-indictment-usa-v-andean-medjedovic.pdf | 2026-10-06 |
+| E1-D10 | D | Sushi Tries to Pick Up the Pieces: A DeFi Governance Case Study — CoinDesk (cites $5.2B TVL, Dec 2021) | https://www.coindesk.com/tech/2021/12/30/sushi-tries-to-pick-up-the-pieces-a-defi-governance-case-study | 2026-10-06 |
+| E1-A11 | A | USA v. Rhoden & Nowlin — indictment, "Undead Tombstone" NFT scheme abandoned before mint completion (M.D. Fla. PDF) | https://www.justice.gov/usao-mdfl/media/1339176/dl?inline= | 2026-10-06 |
+| E1-C11 | C | Chainlink — Fees & Revenue, cumulative fees and adapter breakdown (DeFiLlama) | https://defillama.com/protocol/chainlink | 2026-10-06 |
+| E1-D11 | D | SushiSwap's Lingering Troubles — Genevieve Yeoh, Delphi Digital (traders −60%, LPs −70% YoY) | https://members.delphidigital.io/reports/sushiswaps-lingering-troubles | 2026-10-06 |
+| E1-C12 | C | Chainlink CCIP — bridge volume (DeFiLlama bridge page) | https://defillama.com/bridge/chainlink-ccip | 2026-10-06 |
+| E1-D12 | D | EigenLayer Outflows of $2.3B Signal Restaking Sector Slide — CoinDesk (citing DeFiLlama; $15.1B TVL, Renzo −45%, Kelp −22%) | https://www.coindesk.com/business/2024/07/25/eigenlayer-outflows-of-23b-signal-restaking-sector-slide | 2026-10-06 |
+| E1-C13 | C | Pendle — TVL, Fees, Revenue & Volume (DeFiLlama; states the 5% yield fee and 80% trading-fee share) | https://defillama.com/protocol/pendle | 2026-10-06 |
+| E1-D13 | D | U.S. crypto firm Harmony hit by $100 million heist — Elizabeth Howcroft, Tom Wilson, Hannah Lang, Reuters | https://www.reuters.com/technology/us-crypto-firm-harmony-hit-by-100-million-heist-2022-06-24/ | 2026-10-06 |
+| E1-C14 | C | State of Filecoin Q3 2025 — 1,110 PiB stored, 2,491 datasets, 925 over 1,000 TiB, 36% utilisation (Messari / Blockworks) | https://messari.io/report/state-of-filecoin-q3-2025 | 2026-10-06 |
+| E1-D14 | D | Curve Finance Drained of $50M While CRV Token Sinks 12% in Latest DeFi Exploit — CoinDesk (TVL >$3B → $1.7B; $100M founder position) | https://www.coindesk.com/business/2023/07/30/curve-finance-exploit-puts-100m-worth-of-crypto-at-risk | 2026-10-06 |
+| E1-C15 | C | State of Filecoin Q2 2025 — dataset onboarding and named paid deals: Cornell/Ramo, The Defiant/Akave, Recall, Humanode (Blockworks Intel) | https://app.blockworks.com/report/state-of-filecoin-q2-2025 | 2026-10-06 |
+| E1-D15 | D | Curve's crvUSD depegs as market reacts to shock events — CoinTelegraph (0.35% deviation, recovered) | https://cointelegraph.com/news/curve-crvusd-depegs-market-reacts-shock-events | 2026-10-06 |
+| E1-C16 | C | Revisiting Beanstalk Farms Exploit — CertiK incident analysis | https://www.certik.com/blog/revisiting-beanstalk-farms-exploit | 2026-10-06 |
+| E1-D16 | D | Ethereum and Solana NFT Scammers Charged in $22 Million Rug Pull Scheme — Jason Nelson, Decrypt (reporting the DOJ action; the indictment itself is E1 | https://decrypt.co/298427/ethereum-solana-nft-scammers-charged-22m-rug-pulls | 2026-10-06 |
+| E1-C17 | C | Cornell astrophysics simulation data archived on Filecoin via Ramo (Filecoin Foundation case note; counterparty-side confirmation) | https://fil.org/blog/unlocking-the-cosmos-how-cornell-astrophysicist-uses-ramo-to-store-the-universe-on-filecoin | 2026-10-06 |
+| E1-D17 | D | MakerDAO: What went wrong and how it was fixed — Colin Platt, Decrypt (mechanism of the zero-bid auctions) | https://decrypt.co/23027/makerdao-what-went-wrong-and-how-it-was-fixed | 2026-10-06 |
+| E1-C18 | C | Sky — TVL, Fees & Revenue: $13.45M 30d revenue, $204.6M annualised, $764.76M cumulative (DeFiLlama) | https://defillama.com/protocol/sky | 2026-10-06 |
+| E1-D18 | D | Circle assures market after stablecoin USDC breaks dollar peg — Elizabeth Howcroft, Rishabh Jaiswal, Reuters (11 Mar 2023, low $0.88) | https://www.reuters.com/business/crypto-firm-circle-reveals-33-bln-exposure-silicon-valley-bank-2023-03-11/ | 2026-10-06 |
+| E1-C19 | C | ENS — Fees & Revenue: $241,164 30d fees = 100% protocol revenue, registration vs renewal split (DeFiLlama) | https://defillama.com/protocol/ens | 2026-10-06 |
+| E1-D19 | D | Axie Infinity gaming network Ronin sets date for Ethereum L2 migration — Andrew Hayward, Decrypt (RON inflation >20% → <1%, May 2026 migration) | https://decrypt.co/365131/axie-infinity-gaming-network-ronin-ethereum-layer-2-migration | 2026-10-06 |
+| E1-C20 | C | Ondo RWA dashboard — USDY and OUSG AUM, issuer entities, and the note that ONDO carries no fee entitlement (DeFiLlama) | https://defillama.com/rwa/platform/ondo | 2026-10-06 |
+| E1-D20 | D | USDC Stablecoin Momentarily Depegs to $0.74 on Binance — CoinDesk (3 Jan 2024, order-book imbalance) | https://www.coindesk.com/markets/2024/01/03/usdc-stablecoin-momentarily-depegs-to-074-on-binance | 2026-10-06 |
+| E1-C21 | B | OUSG portfolio composition as of 5 Oct 2026 — BUIDL / BENJI / FYOXX / USDC, with holdings shown (Ondo) | https://ondo.finance/ousg | 2026-10-06 |
+| E1-C22 | C | SushiSwap — TVL $41.75M, 30d volume $31.21M, cumulative volume $251.6B, 30d revenue $6,510 (DeFiLlama) | https://defillama.com/protocol/sushiswap | 2026-10-06 |
+| E1-C23 | C | EigenCloud (ex-EigenLayer) — TVL $7.03B and restaking category share (DeFiLlama) | https://defillama.com/protocol/eigencloud | 2026-10-06 |
+| E1-C24 | C | Harmony Incident Analysis — CertiK on-chain trace, ~$97M across 12 transactions, multisig-owner bypass | https://www.certik.com/blog/harmony-incident-analysis | 2026-10-06 |
+| E1-C25 | C | Ethena USDe — TVL ~$4.9B, quarterly revenue series (DeFiLlama) | https://defillama.com/protocol/ethena-usde | 2026-10-06 |
+| E1-C26 | C | Curve Finance Pools Exploited Due to Code Vulnerabilities — Vyper versions, ~$70M, contagion to Alchemix and Metronome (Chainalysis) | https://www.chainalysis.com/blog/curve-finance-liquidity-pool-hack/ | 2026-10-06 |
+| E1-C27 | B | CCIP Metrics — cumulative transfer volume and fees (Chainlink, on-chain measured) | https://www.chainlinkecosystem.com/ccip-metrics | 2026-10-06 |
 | E2-D10 | D | Li, Chen & Cai — "From Slang to Standards: Consensus-Driven Airdrop Hunter Definition as a Baseline for Cryptocurrency Ecosystem Security and Governan | https://dl.acm.org/doi/abs/10.1145/3772318.3790777 | 2026-10-06 |
 | E2-D11 | D | Ovezik, Karakostas, Milad, Kiayias & Woods — "SoK: Measuring Blockchain Decentralization", arXiv:2501.18279 (ACAC 2025 / Springer LNCS chapter) (measu | https://arxiv.org/abs/2501.18279 | 2026-10-06 |
 | F2 | C | CoinGecko — Trust Score (Basilisk Update) | https://support.coingecko.com/hc/en-us/articles/57645752611865-Trust-Score-Basilisk-Update | 2026-10-06 |
@@ -311,6 +344,6 @@ Tier **E** (blogs, SEO, aggregators, price predictions) is **excluded by policy*
 
 ## Totals
 
-- Unique sources: **298** (from 311 raw citations; 12 URL duplicates collapsed)
-- By tier: A=74, A*=1, B=88, C=63, D=69, E=3
-- Per slice: A=54, B=43, C=50, D=58, E1=29, E2=18, F=59
+- Unique sources: **331** (from 346 raw citations; 14 URL duplicates collapsed)
+- By tier: A=80, A*=1, B=93, C=70, D=84, E=3
+- Per slice: A=54, B=43, C=50, D=58, E1=64, E2=18, F=59

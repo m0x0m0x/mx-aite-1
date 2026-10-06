@@ -7,7 +7,7 @@
 **Status:** Research complete; pre-development
 **Prepared for:** Product team, Crypto Legitimacy & Use-Case Viability Tool
 **Brief:** `p1.txt` (items 1–7)
-**Evidence base:** 260 unique sources (Tier A 72 · Tier B 83 · Tier C 45 · Tier D 56; 3 Tier E quarantined, 0 cited), 145 scoring signals, 11-mechanic casino taxonomy
+**Evidence base:** 331 unique sources (Tier A 80 · Tier B 93 · Tier C 70 · Tier D 84; 3 Tier E quarantined, 0 cited), 203 scoring signals, 11-mechanic casino taxonomy
 **Verification:** All load-bearing quantitative claims independently re-derived; two arithmetic/logic errors found in source drafts and corrected (§2.4)
 
 ---
@@ -62,12 +62,24 @@ CertiK recorded **$2,362,748,975.83** across **760** incidents in 2024 (mean $3.
 **Finding 6 — "Governed by holders" is close to empirically false in this sector.**
 Using complete on-chain data for Compound, Uniswap and ENS, Kani et al. (ETH Zürich) found voting-rights **Gini coefficients around 0.99** — higher than national wealth distributions in the same paper (US 0.850, Europe 0.814) — and Nakamoto coefficients of **8 (Compound), 11 (Uniswap), 18 (ENS)**. Across 21 DAOs, **17 could have a majority voting power controlled by fewer than 10 addresses.** Delegation *amplifies* concentration rather than diluting it. Governance claims should be scored as *participation reality*, not as the existence of a Governor contract. → [§5.2](#52-participation-reality-is-the-load-bearing-governance-metric)
 
-### 1.3 What we recommend
+### 1.3 The finding that reverses the obvious design
+
+**Only one of fifteen candidate metrics survives as a hard gate, and there should be no composite score at all.**
+
+The only survival model in the literature scores **0.98 in-sample and collapses to 0.59–0.65 on unseen data**, omitting every off-chain feature. **No published trust or legitimacy score has ever been validated against outcomes.** CoinGecko's Trust Score is rank-relative and 50% liquidity-weighted. And the most-cited input metrics fail outright: wash trading averaged **>70% of reported volume on unregulated exchanges**, and fabricated volume **improves published rankings**; audit findings are **misaligned with ~49.6% of losses**, which come from keys, phishing and social engineering.
+
+The base rate explains why the one surviving gate matters: of **1,244 protocols**, ~400 clear $1M in fees but only **~20 (≈1.6%)** pass $10M to holders.
+
+> **We therefore recommend gates and evidence panels, not a headline number.** A single 0–100 score would be the most quotable and least honest thing we could build. → [§8.2](#82-why-there-is-no-composite-score), [§9.8](#98-composite-scores-are-rejected-on-evidence)
+
+### 1.4 What we recommend
 
 Build the tool as a **four-state evidence resolver feeding a pre-registered gate register**, presented in the reference site's UX. Not a questionnaire with a radar chart attached — a set of **145 checks** whose inputs are artifacts a project cannot fake cheaply.
 
 | Decision | Recommendation |
 |---|---|
+| Headline number | **None.** Verdict is a plain phrase + blockers + evidence panels. Percentages only per-dimension, paired with coverage. |
+| Volume & audit count | **Inverted** from positive reward to penalty ([§8.1](#81-the-headline-only-one-metric-survives-as-a-gate)) |
 | Questionnaire role | **Claim generation only.** Answers have weight 0; they only tell the engine *where to look*. |
 | Evidence states | `VERIFIED` · `CLAIMED` · `CONTRADICTED` · `UNKNOWN-or-N-A`, scored asymmetrically. `UNKNOWN ≠ 0`. |
 | Veto mechanism | Pre-registered **gates** with severity ordering and score caps. Not weights. |
@@ -95,10 +107,11 @@ Six disjoint slices ran in parallel under a partitioning scheme designed to avoi
 | **B** | Governance reality and treasury integrity | 43 | 30 |
 | **C** | Token economics and casino mechanics | 50 | 32 |
 | **D** | Regulatory, legal and counterparty legitimacy | 58 | 25 |
-| **E** | Empirical evidence and project survival | *see §8* | *see §8* |
+| **E1** | Empirical case studies (survivors, failures, traps) | 64 | 36 |
+| **E2** | Metric reliability and counter-evidence | 18 | 22 |
 | **F** | Data indicators and scoring architecture | 59 | 28 |
 
-Total **260 unique sources** after URL de-duplication (from 264 raw citations). Ledger tier classification: **A 72** (+1 `A*` partial, index metadata only), **B 83**, **C 45**, **D 56**, **E 3** (0 cited).
+Total **331 unique sources** after URL de-duplication (from 345 raw citations). Ledger tier classification: **A 80** (+1 `A*` partial, index metadata only), **B 93**, **C 70**, **D 84**, **E 3** (0 cited).
 
 ### 2.3 Source tiering
 
@@ -106,10 +119,10 @@ The token-optimization plan mandated an A–E tier list, with Tier E (blogs, SEO
 
 | Tier | Type | Examples in evidence base | Count |
 |---|---|---|---|
-| **A** | Primary regulatory / government | SEC, CFTC, DOJ, FINCEN, FCA, ASIC, MAS, ESMA, OFAC, MiCA text, EU sanctions, enforcement releases, court records | 68 |
-| **B** | Primary technical / registry | Audit reports, verified contract source, Safe/Proxy on-chain state, protocol specs, EIPs, official licence registers, technical whitepapers | 83 |
-| **C** | Primary measurement | CertiK Hack3d, Chainalysis, DeFiLlama, Binance Research, ETH Zürich studies, Electric Capital, Token Terminal, Nansen | 45 |
-| **D** | Established media / research / law-firm alerts | Named-journalist investigations, academic preprints, recognised think-tank reports | 56 |
+| **A** | Primary regulatory / government | SEC, CFTC, DOJ, FINCEN, FCA, ASIC, MAS, ESMA, OFAC, MiCA text, EU sanctions, enforcement releases, court records | 80 (+1 partial) |
+| **B** | Primary technical / registry | Audit reports, verified contract source, Safe/Proxy on-chain state, protocol specs, EIPs, official licence registers, technical whitepapers | 93 |
+| **C** | Primary measurement | CertiK Hack3d, Chainalysis, DeFiLlama, Binance Research, ETH Zürich studies, Electric Capital, Token Terminal, Nansen | 70 |
+| **D** | Established media / research / law-firm alerts | Named-journalist investigations, academic preprints, recognised think-tank reports, peer-reviewed wash-trading and token-death studies | 84 |
 | **E** | Banned | Discovered 3 during slice C; **all 3 quarantined and not cited** | 3 (0 cited) |
 
 **Audit note:** three Tier E sources (an 8Blocks blog post, a QuantAbundancia article, a FindAS blog) were found and recorded for provenance. Slice C correctly declined to cite them and marked the dependent claims `UNSOURCED`. That discipline is preserved in the ledger with an explicit `NOT CITED — Tier E quarantined` annotation.
@@ -526,30 +539,100 @@ GDPR posture (EDPB Guidelines 02/2025), KYC/AML presence where the fact pattern 
 
 ## 8. Dimension 5 — Empirical Evidence: What Actually Predicts Survival
 
-*Source: slice E. See the note below.*
+*Source: slices E1 (64 sources, 36 signals) and E2 (18 sources, 22 signals). Full files: [`research/E1_empirical_cases.md`](research/E1_empirical_cases.md), [`research/E2_metric_reliability.md`](research/E2_metric_reliability.md).*
 
-> **Status note.** This slice was still running at the time of writing. Its evidence file, `research/E_empirical_cases.md`, is **not yet present** on disk, and the consolidated ledger and signal register were built **without** it.
+This is the section that **changes the design**, because its central finding is negative.
 
-The framework in this section is therefore specified but **not yet evidenced**, and is explicitly marked as such rather than being filled with plausible-sounding substitutes. This is deliberate: the token-optimization plan's failure-handling rule states that when evidence is insufficient, *"lower the weight's confidence and say so explicitly."*
+### 8.1 The headline: only one metric survives as a gate
 
-### 8.1 Required content when the slice lands
+Of fifteen candidate metrics, **exactly one survives as a hard gate** — and only in the weak form *"does a verifiable mechanism exist."* Everything else is demoted, inverted, or blocked on absent evidence.
 
-1. **Case file — projects with demonstrable real utility that survived**, across categories (DeFi primitives, L2/infrastructure, stablecoins/payments, storage/data, consumer, RWA/DePIN with real counterparties). For each: the actual use case, the on-chain or off-chain metric proving non-speculative use, cycle survival, and the single most distinguishing feature.
-2. **Case file — projects that failed or were revealed illegitimate**: algorithmic-stablecoin depegs, exchange/custodial collapses, governance capture, mercenary-capital bleed post-airdrop, unreferenced/honeypot launches, multisig-compromise failures, and prosecuted pump-and-dumps. For each: mechanism, magnitude, and **which observable signal was visible in advance**.
-3. **Longitudinal dataset findings** — actual measured claims with citations.
-4. **Counter-evidence and base rates.** Selective-survivorship distortion; which widely-believed signals have weak correlation; known weaknesses of on-chain quality metrics; difficulty of labelling a genuinely early project illegitimate.
-5. **Metric reliability ranking** — for each candidate metric: claimed predictive value, evidence quality, gameability, and recommended use as gate / weight / context.
+| Metric | Measured evidence | Verdict |
+|---|---|---|
+| **token-holder revenue** | **~400 of 1,244** protocols clear $1M annual fees, but only **~20 (≈1.6%)** pass $10M to holders | **GATE** (existence of mechanism) |
+| trading volume | Wash trading averaged **>70% of reported volume on unregulated exchanges**; fabricated volume **improves published rankings**. On NFTs ~38% of trades / ~60% of value manipulated | **INVERT → penalty** |
+| audit count | Findings stable (Critical+High share 15–17% yearly) but **misaligned with losses**: key compromise, phishing and social engineering are **~49.6% of losses** yet a negligible share of audit findings; **<2%** of flagged contracts are ever exploited | **INVERT → penalty** |
+| TVL | DeFiLlama's own docs concede TVL is **price-confounded** | Weight, low confidence |
+| holder concentration (HHI) | Zukowski (n=52): delegation **amplifies** voting concentration above holdings in **13 of 18** protocols, up to **21×** | Weight, high confidence — but see §8.4 |
+| holder count | Up to **66%** of airdrop tokens are *"rapidly sold, often in recipients' first post-claim transaction"* | Context only |
+| developer activity | **No project-level survival statistic retrievable** — Electric Capital publishes ecosystem-level only | Weight, marked UNSOURCED |
+| protocol age | Confounded with the selection it produces | Context only |
+| social followers | **Nothing retrieved** with a denominator and out-of-sample statistic | **REJECT** |
+| realised-PnL concentration | Volume fabrication measured; PnL-as-score **UNSOURCED** | v2 |
+| organic-vs-incentivised volume | DeFiLlama *defines* it, publishes **no statistic** | v2 |
+| treasury runway | Not population-computable; DeFiLlama concedes expenses are forum-sourced and "always referencing old data" | Weight, low confidence |
 
-### 8.2 Partial empirical anchors already sourced
+### 8.2 Why there is no composite score
 
-Four empirically-grounded findings from other slices survive without slice E and are usable now:
+Three findings, each sufficient on its own:
 
-- **Delegation amplifies, not dilutes, concentration** (voting-HHI ÷ holding-HHI > 1 in 13 of 18 systems) — [§5.2](#52-participation-reality-is-the-load-bearing-governance-metric)
-- **Vote-cost asymmetry on Uniswap**: 88% of votes carry <10 tokens while 2.5M tokens buys a proposal and 40M passes one — [§5.2](#52-participation-reality-is-the-load-bearing-governance-metric)
-- **NNS executed 94.6% of 19,505 proposals** — ratification, not deliberation — [§5.2](#52-participation-reality-is-the-load-bearing-governance-metric)
-- **Mean vs median loss divergence** (2024 mean $3.11M vs median $150,925) — [§4.6](#46-loss-attribution-contract-code-is-not-the-dominant-vector)
+1. **The only survival model in the literature collapses out of sample.** It scores **0.98 in-sample and degrades to 0.59–0.65 on unseen data** — and the paper reports this against itself. It also omits every off-chain feature.
+2. **No published trust or legitimacy score has ever been validated against outcomes.** Precedent offers no safety net whatsoever.
+3. **CoinGecko's Trust Score is rank-relative** (curve-graded across the population) and allocates **50% of its weight to liquidity**. A rank inside a bad cohort is not a judgement of quality.
 
----
+> **Therefore this report does not recommend a composite 0–100 score.** The architecture in §10 emits **gates + per-pillar evidence panels + a captioned visual summary, and no overall number.**
+
+This is the report's most consequential recommendation, and it reverses the obvious design.
+
+### 8.3 Base rates: the finding that calibrates everything
+
+Of 1,244 protocols (2020–Q3 2025), ~400 clear $1M in fees but only **~20 ≈1.6%** pass $10M to holders. Three consequences:
+
+- **Absence of holder accrual is the norm**, so it is a *weak* negative for a young project and a *strong* negative for a mature one. Age must modulate the signal.
+- **Any high score is weak evidence** in a population where ~98% of projects do not accrue to holders.
+- A tool must state this next to any verdict that depends on it, or the user will over-read it.
+
+### 8.4 Counter-evidence and the traps
+
+Slice E1's "cases the tool must not get wrong" is the most valuable corrective in the research. Surface signals actively mislead in these cases:
+
+| Case | Why the surface signals mislead | What the tool must conclude |
+|---|---|---|
+| **MakerDAO / Sky, Mar 2020** | A flagship, audited, 2-year-old protocol left **$4.5M unbacked DAI** | "Audited and mature" ≠ safe. Recency of failure matters more than age of success. |
+| **USDC / Circle** | On-chain it is **indistinguishable** from an algorithmic stablecoin | Product pattern alone must not condemn it; the reserve and issuer structure is the discriminator. |
+| **Uniswap** | For seven years the token had **no fee entitlement**, and volume is trivially gamed | Do not conclude from volume. Conclude from the dated accrual mechanism. |
+| **EigenLayer** | Real technology, shipping AVSs, top-1 restaking TVL share (**$7.03B, 65% of category**) | Real product ≠ legitimate token economics. These are separable judgements. |
+| **SushiSwap today** | Cumulative volume **$251.6B** — same shape of number as Uniswap | Lifetime volume is not evidence of current utility. |
+| **Axie Infinity** | 2.7M daily users at peak, billions in NFT volume, a purpose-built sidechain | Scale built on incentives decays; check post-incentive retention. |
+| **Chainlink** | Cumulative fees of only **$76.22M** against LINK's market cap look trivial | A naive fee/valuation check wrongly calls it a bad deal. Its value is infrastructure, captured elsewhere. |
+
+#### Pre-loss observables: what was computable *before* the failure
+
+This is the most actionable material in the research, because these were not hindsight — each was arithmetically or structurally detectable in advance.
+
+| Case | The observable | Check |
+|---|---|---|
+| **Terra / UST** | LFG held **~80,000 BTC** — but **no redemption module had ever shipped**. The reserve was large and the holder had no path to it. | Is the stated backing **redeemable by the holder**? (`E1-S15`) |
+| **Iron Finance** | A **60-minute TWAP** priced against a real-time AMM made the stabilising arbitrage **profitable while TITAN rose and unprofitable as it fell.** | Simulate the arbitrage that defends the peg under *falling* collateral. (`E1-S17`) |
+| **Ronin bridge** | **4 of 9** keys held by one operator against a **5-of-9** threshold, plus a **gas-free RPC endpoint added in Nov 2021 that was never revoked** when the loan ended. | Key-management composite: max keys held by one operator vs threshold; non-revoked temporary access. (`E1-S23`) |
+| **KyberSwap** | The exploiter messaged the **KyberDAO multisig** demanding control of the protocol and the DAO in exchange for returning 50%. | Flag a governance body being used as a **negotiation counterparty**. (`E1-S27`) |
+| **NovaTech / HyperFund** | Withdrawal gates and vesting arithmetic, not chain analysis. | Withdrawal-gate surveillance. (`E1-S29`) |
+| **Saitama-class launches** | Promoter-hired "market makers" (named entities including ZM Quant, Gotbit, CLS Global) wash-trading so volume would look organic. | Distinct-counterparty volume filter. (`E1-S06`) |
+
+Two further observations from this slice matter for the tool's credibility:
+
+- **Prosecutors read on-chain transcripts the same way we do.** The FBI's *NexFundAI* operation and the **KyberDAO extortion** both turned on reading transaction-level evidence. Detection method and enforcement method converge, which is the strongest available external validation of this approach.
+- **Self-disclosure is the model behaviour, and it is cheap.** Arbitrum publishes its **own trust-assumption share — 38.3% of TVS** — via L2BEAT, alongside $11.46B–$11.57B TVS. A project disclosing its own centralisation risk should score *better* on transparency than one that stays silent. Absence of published risk accounting must be scored **`UNKNOWN`**, never as low risk. (`E1-S08`)
+
+#### A metric that inverts: fee-to-valuation ratio
+
+**EigenLayer and Chainlink have near-identical fee-to-valuation ratios and opposite verdicts.** That single pair falsifies any threshold built on fee/valuation. It is the clearest possible demonstration of why §8.1 demotes and §8.2 rejects composite scalars — a scalar that cannot separate these two cannot be trusted on anything harder.
+
+Additional counter-evidence from E2:
+
+- **Selective survivorship** guarantees we study winners; base rates derived from surviving projects are unreliable.
+- **The one available "dead coins" study reports >52% of tokens dead** — which is a reminder that failure, not fraud, is the base rate.
+- **Early-stage labelling is genuinely hard**, and a tool should refuse to conclude rather than guess.
+
+### 8.5 What would falsify this report
+
+Slice E2 names its own highest-leverage falsifiers:
+
+1. **The 1.6% prevalence figure** — the entire "one hard gate" conclusion rests on it, and it comes from a single **Tier D** research house whose protocol-level data is aggregated from Dune/Token Terminal/DeFiLlama. If wrong, the gate's calibration changes.
+2. **A published composite score validated out of sample** would reopen the composite-scalar design.
+3. **Per-project developer-retention-to-survival statistics** would let us demote or promote the developer dimension; currently UNSOURCED.
+4. **A retrievable post-incentive TVL retention table** — the widely repeated "40–70% exit within 30 days" figures trace only to Tier E blogs.
+5. **A measured effect size for token-unlock overhang** — only a self-described *preliminary* preprint (n=52) was found; not cited as a number.
 
 ## 9. Scoring Architecture: Gates, Caps and the Averaging Failure
 
@@ -617,6 +700,21 @@ Concrete adversarial responses: **honeypot audits** (an audit that is published 
 The organising principle, and the single most important design sentence in this report:
 
 > **The questionnaire is a claim generator, not an evidence source. Unverifiable answers carry weight 0.**
+
+### 9.8 Composite scores are rejected on evidence
+
+Slice E2 ([§8.2](#82-why-there-is-no-composite-score)) measured three things that together forbid a headline scalar:
+
+| Finding | Consequence for this tool |
+|---|---|
+| Only survival model in the literature: **0.98 in-sample → 0.59–0.65 out of sample**, omitting all off-chain features | A weight vector tuned to known cases will not generalise |
+| **No published trust/legitimacy score has ever been validated against outcomes** | No precedent to inherit |
+| CoinGecko Trust Score is **rank-relative** and **50% liquidity-weighted** | A rank in a cohort is not a quality verdict |
+| Wash trading **>70% of volume on unregulated exchanges**, and fabrication **improves published rankings** | Volume/TVL composite inputs are partly fabricable *and profitable to fake* |
+
+**Two further inversions** (see [§8.1](#81-the-headline-only-one-metric-survives-as-a-gate)): **trading volume** and **audit count** are not positive contributors. High volume with failed wash screening *reduces* confidence in other claims; absence of a traceable audit raises a penalty. Both render as **risk** items, never as achievements.
+
+**The only metric that survives as a gate is token-holder revenue**, in the existence-of-mechanism form — calibrated against the **≈1.6% base rate** ([§8.3](#83-base-rates-the-finding-that-calibrates-everything)).
 
 ### 9.6 Questionnaire design validity
 
@@ -694,12 +792,16 @@ From the 17-tool reference suite (full teardown in [Appendix A](#appendix-a--ref
                       │                  └──────────┬───────────┘
                       ▼                             ▼
               ┌───────────────────────────────────────────────┐
-              │  WEIGHTED PILLAR SCORES → RADAR + BANDS       │
-              │  (radar pairs % with per-axis EVIDENCE STATE) │
+              │  PER-PILLAR EVIDENCE PANELS → RADAR + BAND     │
+              │  NO composite scalar (see §9.8)                │
+              │  radar pairs % with per-axis EVIDENCE STATE     │
+              │  and COVERAGE (checked / total)                │
               └─────────────────────┬─────────────────────────┘
                                     ▼
               ┌───────────────────────────────────────────────┐
-              │  OUTPUT: band · per-dimension evidence state   │
+              │  OUTPUT: band phrase (no number)              │
+              │  + per-dimension evidence state + coverage    │
+              │  + BASE RATES where the verdict depends on it │
               │  + gaps (Weight × Severity) + versioned JSON  │
               │  + "WHAT WOULD CHANGE THIS VERDICT"          │
               │  + CONTESTED / UNSOURCED register             │
@@ -721,6 +823,7 @@ Ordered by severity. Caps mirror the reference site's proven 39/49/59 ladder.
 | **G-NOACCRUAL** | Verified absence of any fee-accrual route to holders, while claiming product utility | **59** | [§6.1](#61-protocol-revenue-is-not-token-holder-revenue) |
 | **G-REFLEXIVE** | Realised-PnL distribution shows near-total concentration consistent with a reflexive loop, with no fee-accrual route | **59** | [§6.2](#62-casino-mechanics-taxonomy-m1m11) |
 | **G-HONEYPOT** | Contract permits sale by insiders but not by users, or transfer restrictions contradict marketing | **39** | Standard trading-fraud pattern |
+| **G-WASHVOL** | Reported volume fails wash-trading screening **and** is offered as evidence of usage | **CAPPED** | Fabricated volume *improves* rankings — treat as misrepresentation ([§8.1](#81-the-headline-only-one-metric-survives-as-a-gate)) |
 
 **Gate rules:**
 
@@ -797,7 +900,7 @@ Extends the reference suite's versioned export with the evidence layer:
 
 ## 11. Consolidated Signal Register
 
-**145 signals** extracted across five completed slices. Full table with per-signal measurement, mechanical verification, evidence tier, failure mode and agent-reported confidence: **[`SIGNAL_REGISTER.md`](SIGNAL_REGISTER.md)**.
+**203 signals** extracted across all seven completed slices. Full table with per-signal measurement, mechanical verification, evidence tier, failure mode and agent-reported confidence: **[`SIGNAL_REGISTER.md`](SIGNAL_REGISTER.md)**.
 
 Highest-value signals by slice:
 
@@ -810,6 +913,14 @@ Highest-value signals by slice:
 **Slice D — Regulatory (25):** `D-S01` operator verified active in home corporate registry · `D-S02` register hit for the *specific* permission claimed · `D-S07` token category stated and surviving read-through · `D-S10` custodial fact pattern established empirically · `D-S20` compliance-not-delegated · `D-S03` ESMA non-compliant-entities file query · `D-S14` AML programme evidenced · `D-S25` negative findings typed `hit`/`miss`/`not-checkable`
 
 **Slice F — Measurement (28):** `SIG-04` licence register lookup · `SIG-02` on-chain owner/admin/proxy/timelock resolution · `SIG-05` audit scoped to a commit hash, cross-checked · `SIG-09` artificial-liquidity exclusion list + emissions-per-net-inflow · `SIG-08` Sybil cluster count, airdrops excluded · `SIG-10` wash-trading estimation · `SIG-16` 12-month dev decay + contributor HHI · `SIG-28` every scored answer resolves to artefact + independent producer + re-runnable check
+
+**Slice E1 — Case studies (36):** *case-derived* rather than metric-derived. The highest-value members are **pre-loss observables** — signals that were computable before the failure rather than reconstructed after it:
+
+`E1-S15` is the stated peg backing **redeemable by the holder** (Terra held ~80k BTC but no redemption module ever shipped) · `E1-S17` **stabiliser-arbitrage asymmetry** under falling collateral (Iron Finance's 60-min TWAP vs real-time AMM) · `E1-S20` flash-loan-acquirable governance weight · `E1-S23` key-management composite (Ronin: 4-of-9 against a 5-of-9 threshold plus an unrevoked gas-free RPC) · `E1-S06` distinct-counterparty volume filter · `E1-S16` yield-versus-carry gap · `E1-S27` post-exploit extortion of a multisig as a negotiation counterparty (KyberDAO) · `E1-S29` withdrawal-gate surveillance · `E1-S31` registration-claim verifiability · `E1-S08` third-party published trust-assumption share (Arbitrum: **38.3%** of TVS)
+
+The slice also supplies the trap cases in [§8.4](#84-counter-evidence-and-the-traps), including the decisive pair: **EigenLayer and Chainlink have near-identical fee-to-valuation ratios and opposite verdicts.** Full set in `SIGNAL_REGISTER.md`.
+
+**Slice E2 — Metric reliability (22):** `E2-S01` holder-accrual mechanism exists — the only gate the evidence supports · `E2-S03` the ≈1.6% prevalence base rate that makes S01 a gate at all · `E2-S04` wash-volume screening, a precondition for any volume use · `E2-S08` voting-HHI ÷ holding-HHI amplification ratio · `E2-S13` developer-activity *composition*, fingerprint-deduped · `E2-S14` minimum observation window, which forces "insufficient evidence" instead of a low score · `E2-S19` threshold/window sensitivity range on any concentration metric · `E2-S20` composite-vs-best-component out-of-sample test
 
 ---
 
@@ -831,6 +942,19 @@ Highest-value signals by slice:
 | Geo-blocking/DNS/frontend jurisdiction as a legal test | No Tier A/B authority prescribes it — **inference-grade** |
 | Incident incidence rates (e.g. % of announced buybacks never executed) | **No dataset exists** |
 | Morris et al. USENIX 2018; Durieux & Ferreira ICSE 2020 | Not located; substituted teEther (USENIX Security '18) |
+| **Any outcome validation of any published trust/legitimacy score** | **The load-bearing gap of the whole exercise** ([§8.2](#82-why-there-is-no-composite-score)) |
+| **Per-project developer-retention → survival statistic** | Electric Capital publishes ecosystem-level data only |
+| **Post-incentive TVL retention** | The widely repeated "40–70% exit in 30 days" figures trace only to Tier E |
+| **Organic-vs-incentivised volume share statistic** | DeFiLlama defines it; publishes no number |
+| **Protocol treasury runway across the population** | DeFiLlama concedes expenses are forum-sourced and "always referencing old data" |
+| **Social follower count → outcomes** | Nothing with a denominator and an out-of-sample statistic |
+| **Realised-PnL concentration as a score** | Volume fabrication is measured; PnL-as-score is not |
+| **Token unlock overhang effect size** | Only a self-described *preliminary* preprint (n=52); not cited as a number |
+| CryptoRank trust-score methodology | No published weighting — excluded from design input |
+| **Lightning Network adoption** | **E1 could not reach a primary or measurement source, so Lightning is deliberately excluded as a case study** rather than included weakly |
+| Blast's ~97% TVL collapse | Press-only — excluded from evidence, retained as a caveat |
+| SushiSwap peak TVL | Three conflicting figures circulate; only the current value is used |
+| Axie peak/current player counts · Lido staked-ETH share · Sky sUSDS balances | Not retrieved |
 
 ### 12.2 Structural gaps in the free tier
 
@@ -843,24 +967,26 @@ Highest-value signals by slice:
 
 1. **Survivorship and selection bias.** The case evidence concentrates on projects large enough to be documented. Base rates are therefore unreliable and the real-use-case marker set may be biased toward visible projects.
 2. **Measurement is a moving target.** Fee-capture figures change daily; the Uniswap Holders Revenue number quoted here ($15.06M/30d) will differ on read. Any published figure needs a snapshot date.
-3. **Some widely-believed signals have weak measured correlation.** Slice E's metric-reliability ranking was designed to surface exactly this and **did not complete**.
+3. **Some widely-believed signals have weak measured correlation.** Slice E2 measured this systematically: **trading volume, social follower count and audit count all fail** as positive indicators ([§8.1](#81-the-headline-only-one-metric-survives-as-a-gate)). Two dimensions the practitioner literature favours are rejected outright.
 4. **New projects are structurally unscoreable** on history-based dimensions. This is a design constraint, not a data gap.
 5. **The reference site's UX is designed for self-report**, and our evidence-resolution layer has no precedent at this scale. The pipeline in §10.2 is a specification, not a validated design.
+6. **The single surviving gate rests on one Tier D prevalence figure** (≈1.6%). Slice E2 flagged this as the highest-leverage falsifier ([§8.5](#85-what-would-falsify-this-report)). If it is wrong, the gate's calibration — and possibly its selection — changes.
 
 ### 12.4 What would change this report's conclusions
 
 - A Tier A–D source publishing **validated cutoffs** for holder concentration or manipulation detection would replace several "publish raw, don't threshold" positions with enforceable thresholds.
-- Slice E's metric-reliability ranking could **demote** signals this report currently weights highly, or **promote** ones currently marked context-only.
+- Slice E2's metric-reliability ranking **already demoted** volume, followers and audit count ([§8.1](#81-the-headline-only-one-metric-survives-as-a-gate)). Further evidence could demote more of the 203 signals.
+- A **free treasury-balance source** or a **published organic-volume statistic** would unblock two dimensions currently marked v2.
 - Retrieval of the **Winding Tree** and **Grayscale/CoinShares** primary texts could materially change §7.1's characterisation.
-- A **free treasury-balance source** would unlock the treasury-runway pillar, currently the weakest-covered dimension.
+
 
 ---
 
 ## 13. References
 
-Full consolidated ledger with tiers and access dates: **[`research/LEDGER.md`](research/LEDGER.md)** — 260 unique sources.
+Full consolidated ledger with tiers and access dates: **[`research/LEDGER.md`](research/LEDGER.md)** — 331 unique sources.
 
-### 13.1 Primary regulatory / government (Tier A — 72)
+### 13.1 Primary regulatory / government (Tier A — 80)
 
 Selected, load-bearing only.
 
@@ -875,7 +1001,7 @@ Selected, load-bearing only.
 - **ASIC** (Block Earner standard: substance over labelling); **FCA Register**; **MAS** Financial Institutions Directory; **FinCEN** MSB Registrant Search; **SEC** IAPD
 - **US DOJ / FTC**, *Merger Guidelines* (2023) — HHI > 1,800 **AND** ΔHHI > 100; graduated-rebuttal standard
 
-### 13.2 Primary technical / registry (Tier B — 83)
+### 13.2 Primary technical / registry (Tier B — 93)
 
 - **Safe (Gnosis Safe)** v1.3.0 — Transaction Service API; singleton `0xd9Db270c1B5E3Bd161e8c8503c55cEABeE709552`; `singleton()` = `0xa619486e`; ERC-1967 false-negative demonstrated on `0x467947EE34aF926cF1DCac093870f613C96B1E0c`
 - **Uniswap Labs**, v2 Technical Whitepaper — the 5-bps admin-key admission — https://blog.uniswap.org/whitepaper.pdf
@@ -951,14 +1077,14 @@ Governing principle: **research breadth is cheap, depth is expensive — buy dep
 
 ## Appendix C — Evidence Ledger
 
-**[`research/LEDGER.md`](research/LEDGER.md)** — 260 unique sources, script-generated, de-duplicated by URL:
+**[`research/LEDGER.md`](research/LEDGER.md)** — 331 unique sources, script-generated, de-duplicated by URL:
 
 | Tier | Count |
 |---|---|
-| A — primary regulatory/government | 72 (+1 `A*` partial) |
-| B — primary technical/registry | 83 |
-| C — primary measurement | 45 |
-| D — established media/research | 56 |
+| A — primary regulatory/government | 80 (+1 `A*` partial) |
+| B — primary technical/registry | 93 |
+| C — primary measurement | 70 |
+| D — established media/research | 84 |
 | E — banned | 3 (0 cited, all quarantined) |
 
 Per-slice evidence files, each with numbered sections, per-question verifiable checks and a sources table:
@@ -969,8 +1095,8 @@ Per-slice evidence files, each with numbered sections, per-question verifiable c
 | [`research/B_governance_treasury.md`](research/B_governance_treasury.md) | Governance & treasury | 43 | 30 |
 | [`research/C_tokenomics_casino.md`](research/C_tokenomics_casino.md) | Tokenomics & casino mechanics | 50 | 32 |
 | [`research/D_regulatory_counterparty.md`](research/D_regulatory_counterparty.md) | Regulatory & counterparty | 58 | 25 |
-| `research/E1_empirical_cases.md` | Empirical case studies | *pending* | *pending* |
-| `research/E2_metric_reliability.md` | Metric reliability & counter-evidence | *pending* | *pending* |
+| [`research/E1_empirical_cases.md`](research/E1_empirical_cases.md) | Empirical case studies | 64 | 36 |
+| [`research/E2_metric_reliability.md`](research/E2_metric_reliability.md) | Metric reliability & counter-evidence | 18 | 22 |
 | [`research/F_data_and_scoring.md`](research/F_data_and_scoring.md) | Data indicators & scoring architecture | 59 | 28 |
 
 **Corrections applied to source material during synthesis** (recorded for audit):
@@ -978,6 +1104,8 @@ Per-slice evidence files, each with numbered sections, per-question verifiable c
 2. `A_contract_security.md` — phishing + key-compromise share of 2024 losses corrected from **86%** to **80.6%**.
 3. `A_contract_security.md` — selector `0xa619486e` identified as `singleton()`, not `masterCopy()`.
 4. `LEDGER.md` — rebuilt after overwrite; 3 Tier E entries annotated `NOT CITED — quarantined`.
+5. `E2_metric_reliability.md` — Cong et al. wash-trading finding sharpened: the **>70%** figure applies to **unregulated** exchanges (the 29 exchanges is the test sample), verified against the *Management Science* abstract.
+6. `A_contract_security.md`, `F_data_and_scoring.md` — re-merged after slice E1/E2 landed; register and ledger regenerated (203 signals, 331 sources).
 
 ---
 
