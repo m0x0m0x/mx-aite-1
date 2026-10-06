@@ -5,8 +5,8 @@
 **Document ID:** DEV-SPEC-R1
 **Date:** 2026-10-06
 **Status:** Ready for development
-**Parent research:** [`../01_crypto_legitimacy_research_report.md`](../01_crypto_legitimacy_research_report.md)
-**Evidence base:** [`../SIGNAL_REGISTER.md`](../SIGNAL_REGISTER.md) (145 signals), [`../research/LEDGER.md`](../research/LEDGER.md) (298 sources)
+**Parent research:** [Appendix E](#appendix-e--research-basis-inlined)
+**Evidence base:** [Appendix G](#appendix-g--signal-inventory-inlined) (203 signals), [Appendix H](#appendix-h--key-sources-inlined) (331 unique sources, Tier A 80 · B 93 · C 70 · D 84; 3 Tier E quarantined, 0 cited)
 **Primary design reference:** <https://www.msawox.com/en/tools/islamic-startup-readiness> — the **Islamic Startup Readiness Suite** (layout, tab component, sidebar, card and live-score panel are to be matched verbatim; see §9 and §11.5)
 **Intended implementer:** local LLM coding agent
 **Scope:** ONE tool with a tabbed result view — not a suite of tools (see [§1.0](#10-this-is-one-tool), [§9](#9-information-architecture-and-navigation))
@@ -76,7 +76,7 @@ A non-expert cannot distinguish a functioning protocol from a well-marketed spec
 |---|---|
 | A price predictor or investment recommendation | We assess evidence, not future returns |
 | An audit tool | We check whether audits exist and are scoped; we do not perform one |
-| A legal opinion | Regulatory analysis is explicitly `CONTESTED` where unsettled ([report §7.1](../01_crypto_legitimacy_research_report.md)) |
+| A legal opinion | Regulatory analysis is explicitly `CONTESTED` where unsettled ([Appendix E.2](#e2-slice-findings), slice D) |
 | A due-diligence substitute for professionals | Standing disclaimer; it is a triage aid |
 | A token price screener | Deliberately excluded — see [§19](#19-anti-requirements) |
 
@@ -221,13 +221,13 @@ Every check resolves to exactly one of four states. **This is the core abstracti
 | `CONTRADICTED` | Artifact evidence contradicts the claim | zero + may raise blocker | **Contradicted** | ✖ |
 | `UNKNOWN` | Not checkable with available sources | **zero and excluded from denominator** | **Not enough information** | ? |
 
-> **`UNKNOWN ≠ 0`.** Unknown is excluded from the pillar denominator, and the pillar displays its coverage (`"based on 9 of 14 checks"`). This is the primary control on false positives for young projects ([report §3.3](../01_crypto_legitimacy_research_report.md)).
+> **`UNKNOWN ≠ 0`.** Unknown is excluded from the pillar denominator, and the pillar displays its coverage (`"based on 9 of 14 checks"`). This is the primary control on false positives for young projects ([Appendix E.3](#e3-the-averaging-failure-theorem) and slice A in [Appendix E.2](#e2-slice-findings)).
 
 ### 6.2 Gate evaluation — the veto layer
 
 Gates run **before** any aggregation and **cannot be offset** by strong pillars.
 
-**The mathematics that forces this design:** with dimensions normalised to [0,1] and score `S = Σwᵢxᵢ`, if a fatal dimension scores 0 then `S_max = 1 − w_F`. Failure is possible only when `w_F > 1 − τ`. At a 0.7 pass threshold, **no weight ≤ 0.30 can force a failure**. Therefore fatal findings must be implemented as gates, never as weights. *(Full derivation: [report §9.1](../01_crypto_legitimacy_research_report.md).)*
+**The mathematics that forces this design:** with dimensions normalised to [0,1] and score `S = Σwᵢxᵢ`, if a fatal dimension scores 0 then `S_max = 1 − w_F`. Failure is possible only when `w_F > 1 − τ`. At a 0.7 pass threshold, **no weight ≤ 0.30 can force a failure**. Therefore fatal findings must be implemented as gates, never as weights. *(Full derivation: [E.3](#e3-the-averaging-failure-theorem).)*
 
 ### 6.3 Gate rules
 
@@ -389,8 +389,8 @@ Version `gates-v1`. Pre-registered. Ordered by severity.
 ### 9.1 Design authority
 
 **Primary visual and interaction reference: the `Islamic Startup Readiness Suite`**
-(`https://www.msawox.com/en/tools/islamic-startup-readiness`) — captured in
-[`../reference/screens/islamic_suite.png`](../reference/screens/islamic_suite.png).
+— live at <https://www.msawox.com/en/tools/islamic-startup-readiness>.
+Its measured structure, engine behaviour and markup are reproduced in full in [Appendix D](#appendix-d--reference-design-inlined), so this spec is self-contained without the capture.
 
 **Match its layout, tab component, sidebar, question/evidence card, and live-score panel exactly.** Do not invent a different information architecture. The only permitted departures are the ones in [§9.6](#96-permitted-departures-from-the-reference), each of which exists to fix a correctness or fairness defect.
 
@@ -991,7 +991,7 @@ Every term below must be implemented as a `/glossary#id` entry and used as an in
 
 ## 14. Data sources and API integration
 
-Full inventory: [`../research/F_data_and_scoring.md`](../research/F_data_and_scoring.md). Constraints are real and must be designed around.
+Full inventory: [§14.2](#142-providers-limits-and-cost). Constraints are real and must be designed around.
 
 ### 14.1 Tiers
 
@@ -1146,22 +1146,22 @@ Engine: <toolId>  ·  Assessed: <timestamp>  ·  Base rates applied: <yes/no>
 
 ## 17. Traceability matrix
 
-| Story group | Research basis | Report section |
-|---|---|---|
-| EPIC 0 (foundations) | Reference teardown | [Appendix A](../reference/01_reference_site_teardown.md) |
-| EPIC 1 (intake) | Reference teardown; identity resolution | [§10.1](../01_crypto_legitimacy_research_report.md) |
-| EPIC 2 (evidence) | Slices A, B, C, D, F | [§4](../01_crypto_legitimacy_research_report.md) §5 §6 §7 §9 |
-| EPIC 3 (gates) | Averaging failure; gate register | [§9.1–9.3](../01_crypto_legitimacy_research_report.md) |
-| EPIC 4 (verdict) | Non-expert constraint; base rates; limitations | [§3.3](../01_crypto_legitimacy_research_report.md) [§12](../01_crypto_legitimacy_research_report.md) |
-| EPIC 5 (radar) | Radar critique; reference radar | [§9.6](../01_crypto_legitimacy_research_report.md) [Appendix A](../reference/01_reference_site_teardown.md) |
-| EPIC 6 (evidence detail) | Tiering; CLAIMED handling | [§2.3](../01_crypto_legitimacy_research_report.md) |
-| EPIC 7 (questionnaire) | Claim-generation principle | [§9.5](../01_crypto_legitimacy_research_report.md) |
-| EPIC 8 (export) | Reference export contract | [Appendix A](../reference/01_reference_site_teardown.md) |
-| EPIC 9 (transparency) | No validated score; limitations | [§6.5](#65-why-we-do-not-ship-a-composite-score) [§12](../01_crypto_legitimacy_research_report.md) |
-| EPIC 10 (privacy) | Fingerprinting inversion | [§7.6](../01_crypto_legitimacy_research_report.md) |
-| EPIC 11 (admin) | Gate versioning; G-R3 | [§10.3](../01_crypto_legitimacy_research_report.md) |
+| Story group | Research basis (inlined) |
+|---|---|
+| EPIC 0 (foundations) | [Appendix D.2](#d2-the-scoring-engine-as-measured) · [Appendix D.3](#d3-islamic-suite-anatomy-the-design-target) |
+| EPIC 1 (intake) | [Appendix D.3](#d3-islamic-suite-anatomy-the-design-target) · [Appendix G](#appendix-g--signal-inventory-inlined) `D-S31` |
+| EPIC 2 (evidence) | [Appendix E.2](#e2-slice-findings) (slices A, B, C, D, F) · [Appendix G](#appendix-g--signal-inventory-inlined) |
+| EPIC 3 (gates) | [§6.2](#62-gate-evaluation--the-veto-layer) · [E.3](#e3-the-averaging-failure-theorem) · [§8](#8-gate-register) |
+| EPIC 4 (verdict) | [E.1](#e1-headline-numbers) (base rates) · [§2](#2-target-user-not-a-crypto-expert) · [E.2](#e2-slice-findings) slice E2 |
+| EPIC 5 (radar) | [Appendix D.2](#d2-the-scoring-engine-as-measured) · [§9.6](#96-permitted-departures-from-the-reference) |
+| EPIC 6 (evidence detail) | [E.2](#e2-slice-findings) slice D (register verification) · [Appendix G](#appendix-g--signal-inventory-inlined) |
+| EPIC 7 (questionnaire) | [§6.1](#61-evidence-states--the-foundation) · [E.2](#e2-slice-findings) slice A |
+| EPIC 8 (export) | [Appendix D.2](#d2-the-scoring-engine-as-measured) (export contract) |
+| EPIC 9 (transparency) | [§6.5](#65-why-we-do-not-ship-a-composite-score) · [H.5](#h5-known-gaps--must-be-disclosed-in-product) |
+| EPIC 10 (privacy) | [D.3](#d3-islamic-suite-anatomy-the-design-target) (IP/geo footer we drop) · [§16](#16-privacy-security-and-non-functional-requirements) |
+| EPIC 11 (admin) | [§6.3](#63-gate-rules) (G-R3 versioning) |
 
-**Signal coverage:** 145 signals in [`../SIGNAL_REGISTER.md`](../SIGNAL_REGISTER.md) map to the five pillars in [§7](#7-pillar-definitions). Implementation should consume the register as the checklist, prioritising signals marked high-confidence.
+**Signal coverage:** 203 signals in [Appendix G](#appendix-g--signal-inventory-inlined) map to the five pillars in [§7](#7-pillar-definitions). Implementation should consume the register as the checklist, prioritising signals marked high-confidence.
 
 ---
 
@@ -1225,12 +1225,301 @@ Things a well-meaning developer might add that would **damage** this tool:
 
 ---
 
+---
+
+# Part V — Appendices (inlined so this file stands alone)
+
+These appendices replace all external research files. This document is self-contained and can be moved into a new environment on its own.
+
+## Appendix D — Reference design (inlined)
+
+**Source:** <https://www.msawox.com/en/tools> · primary reference <https://www.msawox.com/en/tools/islamic-startup-readiness>
+Measured with Playwright 1.63.0 + Chromium headless shell 153, plus static extraction from the site's client bundles.
+
+### D.1 Suite shape
+
+17 tools, **10 distinct scoring engines**, three interaction archetypes: weighted questionnaire, checklist, decision tree. Engines identified by `toolId`: `EthicalStartup_Assessment_v1`, `EthicalAI_Assessment_v1`, `AIRMFRMF_Profile_v1`, `LLMSec_Top10_Checklist_v1`, `DORA_Resilience_Readiness_v1`, `CRA_Conformity_Readiness_v1`, `GDPR_DPIA_Screener_v1`, `ISO27001_Gap_Assessment_v1`, `SOC2_Audit_Readiness_v1`, `IslamicStartupReadinessSuite_v1`.
+
+### D.2 The scoring engine, as measured
+
+```js
+// question object
+{ id:"Q02", n:2, category:"C1", weight:5, scale:"scale_0_2",
+  gateId:"GATE_EST_01", title:"…", citation:"…", prompt:"…", guidance:"…" }
+
+// scoring
+rawPoints = Math.round(10 * ratio) / 10
+status     = pct >= 80 ? "satisfactory" : pct >= 60 ? "moderate" : pct >= 40 ? "high" : "critical"
+riskBand   = score >= 80 ? "ready" : score >= 60 ? "moderate" : score >= 40 ? "high" : "critical"
+
+// gate → hard cap
+{ gateId:"GATE_EST_01", passed: score > 0, capOverride:49,
+  blockerSeverity:"CRITICAL", warningHeadline:"Unmonitored Related-Party Dealings" }
+score = Math.min(score, 49)
+```
+
+| Property | Measured value |
+|---|---|
+| Weights | Sum to **exactly 100**. Observed: `[5,5,4,4,4,4,4,4,6,5,5,4,4,4,4,5,5,4,4,6,5,5]` (22 q, 6 pillars). Near-uniform 3–6 |
+| Answer scales | `scale_0_2` = three options worth `0 / 2.5 / 5` (**mid = half credit**); `yes_no` = `["No","Yes"]`; `weight:0` exists for non-scoring probes |
+| Gates | 7 total — `GATE_EST_01..03`, `GATE_EAI_01..04`. Cap levels **39 / 49 / 59** |
+| Pillar weights | Declared separately, e.g. DORA `{1:16,2:20,3:20,4:16,5:11,6:17}`, CRA `{1:9,2:24,3:24,4:15,5:20,6:8}` |
+| Radar | Polygon, 5–7 axes, plots **% of weight earned within that pillar** |
+| Backlog | `Weight × Gap Severity` ranked into `short_term` / `medium_term` / `long_term`, ids `ACT-DORA-01…09`, `ACT-GDPR-01…06` |
+| Export | `{schemaVersion, toolId, timestamp, rawScore, overallScore, isCapped, capReasons, riskBand, posture, categories[], gaps[], blockers[], actionPlan[], policyMappings[], evidence[]}` + Copy-Markdown / HTML / PDF |
+
+### D.3 Islamic suite anatomy (the design target)
+
+Captured live. Structure, top to bottom — reproduce this exactly:
+
+```
+HEADER      logo · nav · [Free Tools] [GET] · Back to home
+            "Time on this tool: 00:19"        [Share]
+            disclaimer line (always visible)
+EYEBROW     FREE STRATEGIC TOOLS
+H1          Islamic Startup Readiness Suite
+SUB         Assess halalness, funding structure and growth resilience across the
+            Maqasid-aligned Venture Lifecycle — 54 questions, 3 tracks, 100% client-side.
+EYEBROW     ISLAMIC STARTUP READINESS SUITE
+TRUST       100% CLIENT-SIDE PRIVACY · ZERO SIGNUP · LOCAL-FIRST STORAGE
+TABS        HALALSCORE │ FUNDING NAVIGATOR │ CAMEL READINESS │ UNIFIED VIEW
+TRACK DESC  // Is it halal? — business activity & revenue, contracts & finance,
+            // and maqasid governance across 18 questions.
+TRACK META  Audit your core business activity… · 18 questions · Gate 0–1 · 100% client-side
+GRID        grid-cols-[minmax(0,1fr)_280px]
+  MAIN      SECTION LABEL · | Question 01 / 18 | [RED LINE] 5 pts | title | prompt
+            ▼ citation strip | [0/5pts] [2.5/5pts] [5/5pts] [—] Not applicable yet
+            "This red-line question requires a definitive stance."
+            Back │ Next │ ↑ Jump to first unanswered — Q01 │ Start over
+  SIDEBAR   PILLARS & PROGRESS
+              A ACTIVITY 0%   B CONTRACTS 0%   C MAQASID 0%     (rounded-full chips)
+            PROGRESS  0 of 18
+            LIVE SCORE  0 / 100  CRITICAL  + axis labels
+```
+
+**Two mechanisms it already has that we adopt verbatim:**
+1. **`[—] Not applicable yet`** — the reference already treats *unknown/not-applicable* as a first-class answer option, not a zero. This is the direct ancestor of our `NOT ENOUGH INFO` / `NOT APPLICABLE` states.
+2. **`RED LINE` gate badge + "This red-line question requires a definitive stance."** — gates surface *on the card*, beside the weight, not in a separate block.
+
+**Chrome to reproduce:** session timer, standing disclaimer, `Share`, `Free Tools`, `Back to home`, `×NN` flag buttons, visitor counter.
+**Chrome we deliberately drop:** the visitor **IP address and country footer**, and the concurrent-visitor counter — a fraud-investigation tool must not fingerprint its users (departure D5).
+
+---
+
+## Appendix E — Research basis (inlined)
+
+The evidence behind §5–§8. Seven parallel research slices; **331 unique sources** (Tier A 80 · B 93 · C 70 · D 84; 3 Tier E quarantined and never cited). Full source list in [Appendix H](#appendix-h--key-sources-inlined).
+
+### E.1 Headline numbers
+
+| Finding | Value |
+|---|---|
+| 2024 crypto losses | **$2,362,748,975.83** across 760 incidents (mean $3.11M, **median $150,925**) |
+| — phishing | $1,050,129,498 / 296 incidents |
+| — private-key compromise | $855,385,570 / **65** incidents |
+| — phishing + keys combined | **80.6% of all value from 47.5% of incidents** |
+| Non-code share of losses | key compromise + phishing + social engineering ≈ **49.6%** |
+| Contract exploitation | **<2%** of flagged contracts are ever exploited |
+| Holder-accrual prevalence | **≈1.6%** — ~20 of 1,244 protocols pass $10M/yr to holders |
+| Fee threshold | ~400 of 1,244 protocols clear $1M/yr in fees |
+| Voting-rights Gini | ≈**0.99** (Compound, Uniswap) — vs US national wealth 0.850, Europe 0.814 |
+| Nakamoto coefficient | **8** Compound · **11** Uniswap · **18** ENS |
+| DAOs capturable by <10 addresses | **17 of 21** |
+| Delegation amplification | voting-HHI > holding-HHI in **13 of 18** protocols, up to **21×** |
+| Uniswap delegation | **88%** of votes carried <10 tokens; 2.5M tokens buys a proposal, 40M passes it |
+| NNS ratification | 19,505 proposals, **94.6% executed** |
+| Wash trading | **>70% of reported volume on unregulated exchanges** (tests across 29 exchanges) |
+| NFT manipulation | ~38% of trades / ~60% of value |
+| Airdrop mercenary share | up to **66%** sold, often in the first post-claim transaction |
+| 2024 launch float | MC/FDV **12.3%** mean; float as low as 6%; ~$155B unlocking 2024–2030 |
+| Treasury shape | ~86% native token · median 3.6% stablecoins · median 7% productive |
+| Composite model degradation | **0.98 in-sample → 0.59–0.65 out of sample** |
+
+### E.2 Slice findings
+
+**A — Contract & technical security.** Loss is dominated by non-code vectors, so "has an audit" must not be the dominant security term. Two detection defects are mandatory: (a) `GnosisSafeProxy` stores its singleton at **storage slot 0** and its ERC-1967 slot reads **zero**, so ERC-1967-only detection produces a false negative on a funds-controlling object; (b) probing that cannot determine a value must yield `UNKNOWN`, never `absent` — a real major protocol's admin role resolves to a bespoke executor that generic ABI probing reverts on. Named failures: Ronin (~$615M+, key compromise), Harmony (~$100M, decrypted keys), Wormhole (~$326M, forged attestation), Nomad (~$190M, zero-root init), Badger (contracts never touched). Verified control Safe: threshold 5, 9 owners, `guard=0x0`, `modules=[]` — and it holds **0 ETH, 0 USDC, 0 WETH** yet holds irreversible pause authority, proving balance-based importance scoring inverts risk.
+
+**B — Governance & treasury.** A multisig is a signature, not a safety property: on-chain state fixes only *N* and *threshold*. Governance claims should be scored as participation reality, not the existence of a Governor contract. A 9-of-21 DAO study found majority power capturable by fewer than 10 addresses in 17. The template falsifier for "no admin keys" is Uniswap v2's own whitepaper: *"there is a private key that has the ability to update a variable on the factory contract to turn on an on-chain 5-basis-point fee on trades."* Verified: Compound's timelock delay is exactly **172,800s**.
+
+**C — Tokenomics & casino mechanics.** Casino mechanics = *player recruitment, not service provision, is the revenue engine*. Three necessary conditions: no contractual link from product success to holder cash flow; the metric-growing mechanism **is** the monetisation; the attracted population is transient by construction. Eleven-mechanic taxonomy (M1–M11) each with the metric it inflates, its observable tell, and its **false-positive rate**. The anchor measurement is DeFiLlama **Holders Revenue** — `Revenue = Fees − Supply-Side Revenue`; emissions are *incentives, not fees*. Absence from that leaderboard means no verifiable accrual route exists. Fee-switch dates expose unfundamental valuations (Uniswap: *"0% before 28 Dec 2025"*).
+
+**D — Regulatory & counterparty.** US position: SEC Rel. **33-11412** (17 Mar 2026) five-category taxonomy with a Howey overlay that detaches when promises are fulfilled or abandoned; only the **GENIUS Act** enacted (stablecoins); the CLARITY Act remains a bill; Rel. 33-11434 is a proposal. Render unsettled questions as **`CONTESTED`**, never as a penalty. Register verification ladder: marketing claim → self-attestation → **register hit for the specific permission claimed** → on-chain proof. Register presence ≠ approval (ESMA white papers are "not reviewed or approved"). Four distinct legal states: unlicensed-but-legal · unlicensed-and-illegal · licensed · sanctioned. OFAC is **strict liability**, so "OFAC-compliant" is a legal conclusion.
+
+**E1 — Case studies.** **Pre-loss observables** (computable *before* the failure): is stated backing **redeemable by the holder** (Terra held ~80k BTC, no redemption module ever shipped); stabiliser-**arbitrage asymmetry** under falling collateral (Iron Finance's 60-min TWAP vs real-time AMM); key-management composite (Ronin: one operator held 4 of 9 against a 5-of-9 threshold, plus an unrevoked gas-free RPC); governance body used as negotiation counterparty (KyberDAO extortion). Prosecutors read on-chain transcripts identically — FBI *NexFundAI*, KyberDAO — so detection and enforcement converge. **Trap cases:** EigenLayer and Chainlink have **near-identical fee-to-valuation ratios and opposite verdicts**, falsifying any threshold on that metric; USDC is on-chain indistinguishable from an algorithmic stablecoin; SushiSwap's $251.6B cumulative volume matches Uniswap's shape; MakerDAO left $4.5M unbacked DAI *after* two years of being audited.
+
+**E2 — Metric reliability.** Of 15 candidate metrics **exactly one survives as a gate** (token-holder revenue, existence-of-mechanism form). **Volume, social followers and audit count are inverted to penalties or rejected.** No published trust score has ever been validated against outcomes. CoinGecko's is rank-relative and 50% liquidity-weighted. Two signals are blocked on missing measurement, not merit: organic-vs-incentivised volume share, realised-PnL concentration.
+
+**F — Measurement & scoring architecture.** The averaging-failure theorem ([§6.2](#62-gate-evaluation--the-veto-layer)). Existing frameworks assessed: CoinGecko Trust Score (weighted, curve-graded — reusable as a *quality gate* model, not as a verdict), CoinMarketCap (audit-badge partner APIs, verified-vs-self-reported supply), FATF R.16 (evidence standard only — "does not accept post facto transmission"), proof-of-reserves (needs random sampling plus a dummy-account negative control, and **liabilities** disclosed), Trust Wallet (rare numeric floors: ≥10k holders, ≥15k transactions, **airdrops excluded**, 100 transfers/yr). CryptoRank and Santiment methodologies are **unpublished and therefore unusable as design inputs**.
+
+### E.3 The averaging-failure theorem
+
+With dimensions normalised to [0,1], score `S = Σwᵢxᵢ`, `Σwᵢ = 1`. If a fatal criterion `F` scores zero and all others score 1, then `S_max = 1 − w_F`. Failure is forced only when `S_max < τ`, i.e. **only when `w_F > 1 − τ`**. At `τ = 0.7`, **no weight ≤ 0.30 can force a failure on its own.**
+
+| `w_F` | `S_max = 1 − w_F` | Forces failure at τ=0.7? |
+|---|---|---|
+| 0.05 | 0.95 | No |
+| 0.10 | 0.90 | No |
+| 0.30 | 0.70 | No (boundary) |
+| **0.31** | **0.69** | **Yes** |
+
+Corollary: eight equally weighted binary-ish signals at `w = 0.125` give a subject scoring 1.0 on seven and 0.0 on the eighth a score of **0.875** — a comfortable pass. Any equal-weight composite over ≥8 signals passes a project with one fatal defect.
+
+---
+
+## Appendix G — Signal inventory (inlined)
+
+**203 scoring signals** across seven slices: Security 30 · Governance 30 · Tokenomics 32 · Regulatory 25 · Case studies 36 · Metric reliability 22 · Measurement 28. Consumed by pillar:
+
+| Pillar | Signals |
+|---|---|
+| P1 Security | 30 |
+| P2 Governance & Treasury | 30 |
+| P3 Token Economics | 32 + case-derived pre-loss observables |
+| P4 Regulatory & Legal | 25 |
+| P5 Real Use-Case Evidence | 36 + 22 |
+
+The signals this spec names explicitly:
+
+| Signal | What it measures |
+|---|---|
+| `SEC-02` | Audit date vs deployed implementation (the Euler class) |
+| `SEC-12` | Safe-proxy detection without EIP-1967 false negatives |
+| `SEC-14` | `(owners − threshold) + 1` keys to lose control |
+| `SEC-15` | Safe has no bypass modules (`guard`/`modules` empty) |
+| `SEC-20` | Reverse-authority check — does the Safe control anything material? |
+| `SEC-25` | Oracle not sourced from a single thin AMM pool |
+| `SEC-29` | Compiler pinning vs known advisories |
+| `SEC-30` | Loss-vector attribution (contract vs key vs frontend vs phishing) |
+| `GOV-ADMIN-TERMINAL` | Recursive `owner()`/`admin()` walk to terminal controller |
+| `GOV-DELEGATION-AMPLIFICATION` | voting-HHI ÷ holding-HHI (PCA-corrected) |
+| `GOV-NAKAMATO-DELEGATES` | Fewest delegates holding >50% of voting power |
+| `GOV-EMERGENCY-SCOPE` | Reachable function set of every emergency role |
+| `TREAS-NATIVE-EXCL-RATIO` | Treasury ex-native token ÷ market cap |
+| `TREAS-RUNWAY-DISCLOSED` | Burn / revenue / runway date + audit status |
+| `CLAIM-FALSIFIER-COUNT` | Count of refuted decentralization claims |
+| `CS01` | Holders Revenue absent ⇒ no accrual route |
+| `CS04` | Emissions ÷ holder revenue > 2× |
+| `CS05` | Organic vs incentivised TVL share |
+| `CS07` | Buyback actually executed on-chain |
+| `CS10` | Realised-PnL concentration |
+| `CS21` | Airdrop liquidation velocity |
+| `CS26` | TVL-up / token-down divergence |
+| `D-S01` | Operator verified **active** in home corporate registry |
+| `D-S02` | Register hit for the **specific** permission claimed |
+| `D-S03` | ESMA "Non-compliant entities" file query |
+| `D-S07` | Token category stated and surviving the 33-11412 read-through |
+| `D-S10` | Custodial fact pattern established empirically |
+| `D-S14` | AML/sanctions programme evidenced, not asserted |
+| `D-S25` | Negative findings typed `hit` / `miss` / `not-checkable` |
+| `E1-S06` | Distinct-counterparty volume filter (wash trading) |
+| `E1-S08` | Third-party published trust-assumption share |
+| `E1-S09` | Attested reserve coverage vs circulation |
+| `E1-S15` | **Is the stated peg backing redeemable by the holder?** |
+| `E1-S17` | Stabiliser-artebitrage asymmetry under falling collateral |
+| `E1-S20` | Flash-loan-acquirable governance weight |
+| `E1-S23` | Key-management composite |
+| `E1-S27` | Post-exploit extortion of a multisig as counterparty |
+| `E1-S29` | Withdrawal-gate surveillance |
+| `E1-S31` | Registration-claim verifiability |
+| `E2-S01` | Holder-accrual mechanism exists — the only supported gate |
+| `E2-S03` | The ≈1.6% prevalence base rate |
+| `E2-S08` | Voting-HHI / holding-HHI amplification ratio |
+| `E2-S13` | Developer-activity composition, fingerprint-deduped |
+| `E2-S14` | Minimum observation window → force "insufficient evidence" |
+| `E2-S19` | Threshold/window sensitivity range on concentration metrics |
+| `E2-S20` | Composite-vs-best-component out-of-sample test |
+| `SIG-02` | On-chain owner/admin/proxy/timelock resolution |
+| `SIG-04` | Licence register lookup |
+| `SIG-05` | Audit scoped to a commit hash, cross-checked |
+| `SIG-08` | Sybil cluster count, airdrops excluded |
+| `SIG-09` | Artificial-liquidity exclusion list + emissions-per-net-inflow |
+| `SIG-10` | Wash-trading estimation |
+| `SIG-28` | Every scored answer resolves to artefact + independent producer + re-runnable check |
+
+---
+
+## Appendix H — Key sources (inlined)
+
+The authoritative sources behind this spec. **Tier key:** **A** primary regulatory/government · **B** primary technical/registry · **C** primary measurement · **D** established research/media. **Tier E** (blogs, SEO, listing sites, price predictions) was **banned** as citation ground; 3 were discovered and quarantined uncited.
+
+### H.1 Regulatory (Tier A)
+
+| Source | URL |
+|---|---|
+| SEC Commission Interpretation **Rel. 33-11412** (17 Mar 2026), crypto-asset categories + Howey overlay | <https://www.sec.gov/files/33-11412-fact-sheet.pdf> |
+| SEC Rel. 33-11412 full text | <https://www.sec.gov/files/rules/interp/2026/33-11412.pdf> |
+| SEC Press Release 2026-30 | <https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-crypto-assets> |
+| SEC *Regulation Crypto Assets* 33-11434 (Aug 2026) — **proposal, not law** | <https://www.sec.gov/files/rules/proposals/2026/33-11434.pdf> |
+| **GENIUS Act**, Pub. L. 119-27 (stablecoins only) | <https://www.govinfo.gov/> |
+| MiCA — Regulation (EU) 2023/1114 full text | <https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R1114> |
+| ESMA MiCA register (incl. "Non-compliant entities") | <https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica> |
+| FCA cryptoasset authorisation & supervision | <https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation/authorisation-supervision-enforcement> |
+| OFAC SDN list — **name-only, fuzzy match** | <https://sanctionssearch.ofac.treas.gov/> |
+| DOJ/FTC 2023 Merger Guidelines — HHI >1,800 **AND** ΔHHI >100; graduated rebuttal | <https://www.justice.gov/atr/2023-merger-guidelines> |
+| FBI IC3 2025 report | <https://www.ic3.gov/> |
+
+### H.2 Technical (Tier B)
+
+| Source | URL |
+|---|---|
+| Uniswap v2 whitepaper — **the 5-bps admin-key admission** | <https://blog.uniswap.org/whitepaper.pdf> |
+| Uniswap governance technical reference (timelock + GovernorBravo addresses) | <https://developers.uniswap.org/docs/ecosystem/governance/technical-reference> |
+| OpenZeppelin proxy/admin documentation | <https://docs.openzeppelin.com/> |
+| Compound Timelock (verified 172,800s delay) | <https://compound.finance/timelock> |
+| Safe v1.3.0 singleton `0xd9Db270c1B5E3Bd161e8c8503c55cEABeE709552`; `singleton()` = `0xa619486e` | <https://github.com/safe-global/safe-smart-account> |
+| Safe Transaction Service API | <https://safe-transaction-mainnet.safe.global/api/v1/safes/> |
+| Ethereum mainnet JSON-RPC (slot-0 + EIP-1967 reads) | <https://ethereum-rpc.publicnode.com> |
+| FATF Recommendation 16 (Travel Rule) | <https://www.fatf-gafi.org/> |
+| NIST AI RMF · OWASP LLM Top 10 · ISO/IEC 27001:2022 · SOC 2 | <https://www.nist.gov/itl/ai-rmf> |
+| Uniswap Foundation FY2024 summary (self-labelled **unaudited**) | <https://gov.uniswap.org/t/uniswap-foundation-summary-fy-2024-financials/25486> |
+
+### H.3 Measurement (Tier C)
+
+| Source | Key figure | URL |
+|---|---|---|
+| CertiK Hack3d 2024 | $2,362,748,975.83 / 760 incidents; phishing $1.05B/296; keys $855M/65; median $150,925 | <https://www.certik.com/blog/hack3d-the-web3-security-report-2024> |
+| CertiK Hack3d 2023 | $1.84B / 751; key compromise ≈ half of losses | <https://www.certik.com/blog/hack3d-the-web3-security-report-2023> |
+| Chainalysis 2025 Crypto Crime Report | $40.9B to identified illicit addresses (lower bound); illicit share **<1%** of volume | <https://www.chainalysis.com/wp-content/uploads/2025/02/the-2025-crypto-crime-report-release.pdf> |
+| DeFiLlama data definitions | `Revenue = Fees − SSR`; emissions are incentives not fees | <https://docs.llama.fi/analysts/data-definitions> |
+| DeFiLlama Holders Revenue | presence test for accrual; dated fee switches | <https://defillama.com/holders-revenue> |
+| Binance Research 2024 launches | MC/FDV 12.3%; ~$155B unlocking 2024–2030 | <https://www.binance.com/en/research> |
+| Electric Capital Open Dev Data | ecosystem-level dev metrics only | <https://data.electriccapital.io/> |
+| L2BEAT | Arbitrum trust-assumption share **38.3%** of TVS | <https://l2beat.com/scaling/projects/arbitrum> |
+| Ethereum / Arbiscan / Blockscout explorers | code, verified source, top-N holders | <https://eth.blockscout.com> |
+
+### H.4 Research (Tier D)
+
+| Source | Key finding |
+|---|---|
+| Cong, Li, Tang & Yang, "Crypto Wash Trading," *Management Science* 69(11) / NBER WP 30783 | Wash trading **>70% of reported volume on unregulated exchanges**; fabricated volume improves published rankings |
+| Zukowski, governance concentration, *Frontiers in Blockchain* | Delegation amplifies voting concentration above holdings in **13/18** protocols, up to **21×** |
+| Kani et al. (ETH Zürich), complete on-chain governance data | Voting Gini ≈0.99; Nakamoto 8/11/18 |
+| a16z, 18 Ethereum DAOs 2021–2023 | ~17% of power delegated; delegates vote on 33% of proposals |
+| 1kx Onchain Revenue Report | 1,244 protocols; ~400 >$1M fees; **~20 (1.6%)** >$10M to holders |
+| Kuehn & Adnan, "Dead Coins" | **>52%** of tokens dead — failure, not fraud, is the base rate |
+| Falk et al., NFT wash trading | ~38% of trades / ~60% of value manipulated |
+| Messias et al., airdrop recipient behaviour | up to **66%** sold on first post-claim transaction |
+| Bourveau et al., *Review of Accounting Studies* 29 | ~8,500 audits hand-coded; findings per audit stable |
+| Beyer, audit gap | **<2%** of flagged contracts ever exploited |
+
+### H.5 Known gaps — must be disclosed in-product
+
+1. **Address-level sanctions attribution** — OFAC is name-only; needs a paid provider.
+2. **Treasury balances** — no free API; DeFiLlama concedes expenses are forum-sourced and "always referencing old data".
+3. **Full holder sets** — explorers expose top-N only; HHI needs paid access or self-authored SQL.
+4. **Artemis** REST API is enterprise-gated.
+5. **Organic-vs-incentivised volume share** — defined but never published.
+6. **Per-project developer-retention → survival** — ecosystem-level data only.
+7. **Token-unlock overhang effect size** — only a self-described preliminary preprint (n=52); not cited as a number.
+
+---
+
 ## Document control
 
 | Version | Date | Change |
 |---|---|---|
 | 1.0 | 2026-10-06 | Initial development specification |
 
-**Sources of authority:** [`../01_crypto_legitimacy_research_report.md`](../01_crypto_legitimacy_research_report.md) · [`../SIGNAL_REGISTER.md`](../SIGNAL_REGISTER.md) · [`../research/LEDGER.md`](../research/LEDGER.md) · [`../reference/01_reference_site_teardown.md`](../reference/01_reference_site_teardown.md)
+**Sources of authority:** [Appendix E](#appendix-e--research-basis-inlined) · [Appendix G](#appendix-g--signal-inventory-inlined) · [Appendix H](#appendix-h--key-sources-inlined) · [Appendix D](#appendix-d--reference-design-inlined)
 
 **Design reference:** <https://www.msawox.com/en/tools>
