@@ -1,0 +1,498 @@
+{
+ "ai-act-risk-tier": {
+  "title": "What's your EU AI Act risk tier? — msawox",
+  "h1": "What's your EU AI Act risk tier?",
+  "sub": "Free Strategic ToolsWhat's your EU AI Act risk tier?Twenty-four questions mapped to Regulation (EU) 2024/1689 as amended by the Digital Omnibus (Reg. 2026/1744) — a prohibited-practice screen, Annex III / Annex I high-risk triggers, GPAI role, live Art. 50 transparency duties, and a 0–100 obligations-readiness score with a prioritised action plan.",
+  "qCount": 1,
+  "groups": [
+   {
+    "q": "NoNo — no subliminal manipulation or vulnerability exploitation.",
+    "n": 0,
+    "opts": []
+   }
+  ],
+  "scoreUI": [
+   "0\n/ 100"
+  ],
+  "bands": [],
+  "visibleLabels": []
+ },
+ "ai-readiness-score": {
+  "title": "How ready is your company for AI? — msawox",
+  "h1": "How ready is your company for AI?",
+  "sub": "Free Strategic ToolsHow ready is your company for AI?A five-axis questionnaire, adapted from Gartner's AI Maturity Model, calibrated for companies that don't have an MLOps team yet. No email gate.",
+  "qCount": 1,
+  "groups": [
+   {
+    "q": "Not startedNo use case identified",
+    "n": 0,
+    "opts": []
+   }
+  ],
+  "scoreUI": [],
+  "bands": [],
+  "visibleLabels": []
+ },
+ "build-vs-buy": {
+  "title": "Should you build, buy, or partner? — msawox",
+  "h1": "Should you build, buy, or partner?",
+  "sub": "Free Strategic ToolsShould you build, buy, or partner?Five make-or-buy questions that weigh a Build, Buy, or Partner recommendation for your next tech decision.",
+  "qCount": 0,
+  "groups": [],
+  "scoreUI": [],
+  "bands": [],
+  "visibleLabels": [
+   "Question",
+   "Yes",
+   "No"
+  ]
+ },
+ "cra-conformity-readiness": {
+  "title": "Is your product CRA-ready? — msawox",
+  "h1": "Is your product CRA-ready?",
+  "sub": "Free Strategic ToolsIs your product CRA-ready?Applies Regulation (EU) 2024/2847 — Recital (12) pure-SaaS scope test, Annex III/IV product classification, Annex I Part I essential requirements, Annex I Part II vulnerability handling & SBOM, Art. 13 support periods and Art. 14 incident reporting (enforcement 11 September 2026) — to produce a 0–100 conformity readiness score with a prioritized remedi",
+  "qCount": 2,
+  "groups": [
+   {
+    "q": "noNo — not placed on the EU market / no digital connection.",
+    "n": 0,
+    "opts": []
+   },
+   {
+    "q": "noNo — not excluded (standard product subject to the CRA).",
+    "n": 0,
+    "opts": []
+   }
+  ],
+  "scoreUI": [],
+  "bands": [],
+  "visibleLabels": [
+   "Stage A · CRA applicability screening"
+  ]
+ },
+ "dora-ict-resilience": {
+  "title": "Is your ICT resilience DORA-ready? — msawox",
+  "h1": "Is your ICT resilience DORA-ready?",
+  "sub": "Free Strategic ToolsIs your ICT resilience DORA-ready?Applies Regulation (EU) 2022/2554 — ICT risk governance, incident reporting (4h/24h ladder), resilience testing and third-party risk — to detect your regulatory posture (Posture A / B / Dual), produce a 0–100 readiness score with hard cap overrides, and draft a 30-day remediation plan.",
+  "qCount": 1,
+  "groups": [
+   {
+    "q": "NoNo — we do not hold a financial-sector licence or authorisation.",
+    "n": 0,
+    "opts": []
+   }
+  ],
+  "scoreUI": [
+   "0\n/ 100"
+  ],
+  "bands": [],
+  "visibleLabels": []
+ },
+ "due-diligence-checklist": {
+  "title": "Will your startup pass technical due diligence? — msawox",
+  "h1": "Will your startup pass technical due diligence?",
+  "sub": "Free Strategic ToolsWill your startup pass technical due diligence?What investors actually look for. Tick what you have, surface what you don't — a 12-point technical due-diligence checklist for seed and Series A.",
+  "qCount": 0,
+  "groups": [],
+  "scoreUI": [],
+  "bands": [],
+  "visibleLabels": []
+ },
+ "ethical-factor-score": {
+  "title": "Ethical Startup & Ethical AI Assessment Suite — msawox",
+  "h1": "Ethical Startup & Ethical AI Assessment Suite",
+  "sub": "Free Strategic ToolsEthical Startup & Ethical AI Assessment SuiteDual-track diagnostic: evaluate business governance, founder fiduciary controls, and technical agentic AI safety across 44 research-grounded benchmarks.",
+  "qCount": 1,
+  "groups": [
+   {
+    "q": "[0 / 5 pts]Absent / Informal — Founders routinely use corporate accounts for personal expenses with retrospective, informal reconciliations.",
+    "n": 0,
+    "opts": []
+   }
+  ],
+  "scoreUI": [
+   "0\n/ 100"
+  ],
+  "bands": [],
+  "visibleLabels": [
+   "Fiduciary Fund Separation & Personal Benefit Controls"
+  ]
+ },
+ "founder-market-fit": {
+  "title": "Are you the right founder for this problem? — msawox",
+  "h1": "Are you the right founder for this problem?",
+  "sub": "Free Strategic ToolsAre you the right founder for this problem?Six questions. An honest score on whether you're the right founder for this problem.",
+  "qCount": 6,
+  "groups": [
+   {
+    "q": "I have lived this problem personally for 2+ years.",
+    "n": 5,
+    "opts": [
+     {
+      "v": "1",
+      "label": "1",
+      "opt": "1",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "2",
+      "label": "2",
+      "opt": "2",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "3",
+      "label": "3",
+      "opt": "3",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "4",
+      "label": "4",
+      "opt": "4",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "5",
+      "label": "5",
+      "opt": "5",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     }
+    ]
+   },
+   {
+    "q": "I can name 20 potential customers off the top of my head.",
+    "n": 5,
+    "opts": [
+     {
+      "v": "1",
+      "label": "1",
+      "opt": "1",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "2",
+      "label": "2",
+      "opt": "2",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "3",
+      "label": "3",
+      "opt": "3",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "4",
+      "label": "4",
+      "opt": "4",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "5",
+      "label": "5",
+      "opt": "5",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     }
+    ]
+   },
+   {
+    "q": "I know the existing solutions and exactly why they fail.",
+    "n": 5,
+    "opts": [
+     {
+      "v": "1",
+      "label": "1",
+      "opt": "1",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "2",
+      "label": "2",
+      "opt": "2",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "3",
+      "label": "3",
+      "opt": "3",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "4",
+      "label": "4",
+      "opt": "4",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "5",
+      "label": "5",
+      "opt": "5",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     }
+    ]
+   },
+   {
+    "q": "I have a network in this industry that takes my calls.",
+    "n": 5,
+    "opts": [
+     {
+      "v": "1",
+      "label": "1",
+      "opt": "1",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "2",
+      "label": "2",
+      "opt": "2",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "3",
+      "label": "3",
+      "opt": "3",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "4",
+      "label": "4",
+      "opt": "4",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "5",
+      "label": "5",
+      "opt": "5",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     }
+    ]
+   },
+   {
+    "q": "I would still work on this if it took 10 years.",
+    "n": 5,
+    "opts": [
+     {
+      "v": "1",
+      "label": "1",
+      "opt": "1",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "2",
+      "label": "2",
+      "opt": "2",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "3",
+      "label": "3",
+      "opt": "3",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "4",
+      "label": "4",
+      "opt": "4",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "5",
+      "label": "5",
+      "opt": "5",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     }
+    ]
+   },
+   {
+    "q": "I understand the unit economics of this market.",
+    "n": 5,
+    "opts": [
+     {
+      "v": "1",
+      "label": "1",
+      "opt": "1",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "2",
+      "label": "2",
+      "opt": "2",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "3",
+      "label": "3",
+      "opt": "3",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "4",
+      "label": "4",
+      "opt": "4",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     },
+     {
+      "v": "5",
+      "label": "5",
+      "opt": "5",
+      "cls": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex-1 rounded-lg border p-3 text-center cursor-pointer transition-colors font-mono border-border/60 text-muted-foreground hover:border-secondary/40"
+     }
+    ]
+   }
+  ],
+  "scoreUI": [],
+  "bands": [],
+  "visibleLabels": []
+ },
+ "gdpr-dpia-screener": {
+  "title": "Is your data processing GDPR-ready? — msawox",
+  "h1": "Is your data processing GDPR-ready?",
+  "sub": "Free Strategic ToolsIs your data processing GDPR-ready?Applies Regulation (EU) 2016/679 — Art. 35 DPIA triggers, the EDPB WP248 high-risk criteria, Art. 28(3) vendor DPAs and the Art. 83 fine tiers — to determine whether a Data Protection Impact Assessment is mandatory and produce a 0–100 privacy posture score with a prioritised 30-day remediation plan.",
+  "qCount": 1,
+  "groups": [
+   {
+    "q": "NoNo — no automated decisions with legal or similarly significant effects.",
+    "n": 0,
+    "opts": []
+   }
+  ],
+  "scoreUI": [
+   "0\n/ 100"
+  ],
+  "bands": [],
+  "visibleLabels": []
+ },
+ "islamic-startup-readiness": {
+  "title": "Islamic Startup Readiness Suite — msawox",
+  "h1": "Islamic Startup Readiness Suite",
+  "sub": "Free Strategic ToolsIslamic Startup Readiness SuiteAssess halalness, funding structure and growth resilience across the Maqasid-aligned Venture Lifecycle — 54 questions, 3 tracks, 100% client-side.",
+  "qCount": 1,
+  "groups": [
+   {
+    "q": "[0 / 5 pts]Absent: core activity is in a prohibited sector",
+    "n": 0,
+    "opts": []
+   }
+  ],
+  "scoreUI": [
+   "0\n/ 100"
+  ],
+  "bands": [],
+  "visibleLabels": [
+   "Core Activity Screen"
+  ]
+ },
+ "iso27001-gap-assessment": {
+  "title": "Is your ISMS ISO/IEC 27001:2022 ready? — msawox",
+  "h1": "Is your ISMS ISO/IEC 27001:2022 ready?",
+  "sub": "Free Strategic ToolsIs your ISMS ISO/IEC 27001:2022 ready?Applies ISO/IEC 27001:2022 (with Amd 1:2024) — the Clauses 4–10 management-system requirements and the 93-control Annex A (IAF MD26 transition closed 2025-10-31) — to score your ISMS readiness, diagnose the four Stage-1 certification gates (SoA, risk assessment, internal audit, management review) and build a prioritized 90-day roadmap, with",
+  "qCount": 1,
+  "groups": [
+   {
+    "q": "0 / 2Absent — no formal scope document exists; boundaries are informal or undefined.",
+    "n": 0,
+    "opts": []
+   }
+  ],
+  "scoreUI": [
+   "0\n/ 100"
+  ],
+  "bands": [],
+  "visibleLabels": []
+ },
+ "nis2-gap-assessment": {
+  "title": "Is your company in scope for NIS2? — msawox",
+  "h1": "Is your company in scope for NIS2?",
+  "sub": "Free Strategic ToolsIs your company in scope for NIS2?Applies Directive (EU) 2022/2555 and its Art. 21 supply-chain flow-downs to determine direct scope (essential / important entity), carve-outs and enterprise-customer exposure — verdict, 0–100 readiness score, gap audit and an 8-policy action map.",
+  "qCount": 1,
+  "groups": [
+   {
+    "q": "NoNo — we do not operate directly in an Annex I sector.",
+    "n": 0,
+    "opts": []
+   }
+  ],
+  "scoreUI": [
+   "0\n/ 100"
+  ],
+  "bands": [],
+  "visibleLabels": []
+ },
+ "nist-ai-rmf-profile": {
+  "title": "How strong is your AI risk management profile? — msawox",
+  "h1": "How strong is your AI risk management profile?",
+  "sub": "Free Strategic ToolsHow strong is your AI risk management profile?Applies the NIST AI Risk Management Framework 1.0 (NIST AI 100-1) and the NIST Generative AI Profile (NIST AI 600-1): five weighted functions — Govern, Map, Measure, Manage and the GenAI Overlay — scoring your organizational AI risk management from policy and inventory to production measurement and incident response, flagging any fu",
+  "qCount": 1,
+  "groups": [
+   {
+    "q": "NoNo — not yet in place.",
+    "n": 0,
+    "opts": []
+   }
+  ],
+  "scoreUI": [
+   "0\n/ 100"
+  ],
+  "bands": [],
+  "visibleLabels": []
+ },
+ "owasp-llm-security-checklist": {
+  "title": "Is your LLM app secure against the OWASP Top 10? — msawox",
+  "h1": "Is your LLM app secure against the OWASP Top 10?",
+  "sub": "Free Strategic ToolsIs your LLM app secure against the OWASP Top 10?Applies the OWASP Top 10 for LLM Applications (2025) and the OWASP GenAI LLM Top 10 2026 — prompt injection, sensitive-information disclosure, supply chain, improper output handling, excessive agency, vector weaknesses and unbounded consumption — to score your LLM/RAG/agentic security posture, cap the score at 59 when unvalidated ",
+  "qCount": 1,
+  "groups": [
+   {
+    "q": "0 / 2Absent — system prompts and user inputs are concatenated directly via string templates without delimiter tagging; system prompts are exposed or modified on the client.",
+    "n": 0,
+    "opts": []
+   }
+  ],
+  "scoreUI": [
+   "0\n/ 100"
+  ],
+  "bands": [],
+  "visibleLabels": []
+ },
+ "role-decision-tree": {
+  "title": "Which technical help do you actually need? — msawox",
+  "h1": "Which technical help do you actually need?",
+  "sub": "Free Strategic ToolsWhich technical help do you actually need?Four weighted questions that recommend the kind of technical help you actually need — co-founder, lead engineer, or fractional CTO.",
+  "qCount": 0,
+  "groups": [],
+  "scoreUI": [],
+  "bands": [],
+  "visibleLabels": []
+ },
+ "soc2-audit-readiness": {
+  "title": "Is your company SOC 2 audit-ready? — msawox",
+  "h1": "Is your company SOC 2 audit-ready?",
+  "sub": "Free Strategic ToolsIs your company SOC 2 audit-ready?Applies the AICPA 2017 Trust Services Criteria (with 2022 revised Points of Focus) and the 2018 SOC 2 Description Criteria — CC1–CC9 governance, risk, access, change, operations, vendors and audit engagement — to score your Type I / Type II audit readiness and sequence the evidence window before you engage a CPA firm.",
+  "qCount": 1,
+  "groups": [
+   {
+    "q": "yesYes — a named security owner with written authority exists.",
+    "n": 0,
+    "opts": []
+   }
+  ],
+  "scoreUI": [
+   "0\n/ 100"
+  ],
+  "bands": [],
+  "visibleLabels": []
+ },
+ "technical-risk-score": {
+  "title": "How risky is your technical stack? — msawox",
+  "h1": "How risky is your technical stack?",
+  "sub": "Free Strategic ToolsHow risky is your technical stack?Four sliders on architecture, lock-in, security, and scalability — a 0–100 risk score adapted from TRL logic, in under a minute.",
+  "qCount": 0,
+  "groups": [],
+  "scoreUI": [
+   "50\n/ 100"
+  ],
+  "bands": [],
+  "visibleLabels": []
+ }
+}
