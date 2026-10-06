@@ -149,12 +149,51 @@ Tier **E** (blogs, SEO, aggregators, price predictions) is **excluded by policy*
 | C43 | C | CryptoQuant API docs — Stablecoin Flow Indicator, Exchange Supply Ratio definition | https://userguide.cryptoquant.com/api/stablecoin-flow-indicator | 2026-10-06 |
 | C44 | D | Messari/CoinGecko sector data cross-check: CEX.IO "Memecoins: Too Big to Ignore" (memecoin volume/MCap ratio) | https://blog.cex.io/ecosystem/memecoins-too-big-to-ignore-34839 | 2026-10-06 |
 | C45 | D | Digital Asset Database, "Inflation versus dilution, and what real staking yield means" | https://digitalassetdatabase.com/learn/inflation-dilution-and-real-staking-yield | 2026-10-06 |
-| C46 | E | 8Blocks, "Token Vesting & Allocation Benchmarks (2026)" — **NOT CITED**; used only to locate Stephanian/Liquifi/Binance/Tokenomist primaries **NOT CITED — Tier E quarantined** | https://8blocks.io/learn/token-vesting-benchmarks | 2026-10-06 |
-| C47 | E | QuantAbundancia HYPE tokenomics analysis — **NOT CITED**; superseded by [C31][C13] **NOT CITED — Tier E quarantined** | https://quantabundancia.com/articles/hype-tokenomics-assistance-fund-buyback | 2026-10-06 |
+| C46 | E | 8Blocks, "Token Vesting & Allocation Benchmarks (2026)" — **NOT CITED**; used only to locate Stephanian/Liquifi/Binance/Tokenomist primaries | https://8blocks.io/learn/token-vesting-benchmarks | 2026-10-06 |
+| C47 | E | QuantAbundancia HYPE tokenomics analysis — **NOT CITED**; superseded by [C31][C13] | https://quantabundancia.com/articles/hype-tokenomics-assistance-fund-buyback | 2026-10-06 |
 | C48 | D | CryptoNews reporting on DeFi Oasis realized-PnL analysis of Polymarket (<0.04% of addresses captured >70% of $3.7B profits) | https://cryptonews.com/news/70-of-polymarket-traders-lost-money-as-top-0-04-captured-most-profits-research/ | 2026-10-06 |
-| C49 | E | FindAS blog, "Unlocking Engagement: Cryptocurrency Points Systems" — **NOT CITED**; Hyperliquid 31%/94k-users figure left UNSOURCED **NOT CITED — Tier E quarantined** | https://www.findas.org/blogs/points-systems | 2026-10-06 |
+| C49 | E | FindAS blog, "Unlocking Engagement: Cryptocurrency Points Systems" — **NOT CITED**; Hyperliquid 31%/94k-users figure left UNSOURCED | https://www.findas.org/blogs/points-systems | 2026-10-06 |
 | C50 | D | Blockchain.news aggregation of Santiment top-10 holder concentration data (unadjusted for contract wallets) | https://blockchain.news/flashnews/analysis-of-top-wallet-holdings-in-major-altcoin-markets | 2026-10-06 |
-| F1 | C | CoinGecko — Trust Score Methodology | https://support.coingecko.com/hc/en-us/articles/36442561461657-Trust-Score-Methodology | 2026-10-06 |
+| E1-C1 | C | Uniswap — TVL, Fees, Revenue & Volume (DeFiLlama) | https://defillama.com/protocol/uniswap | 2026-10-06 |
+| E1-B1 | B | Depegging of UST — on-chain transaction-level trace (Jump Crypto research) | https://jumpcrypto.com/resources/the-depegging-of-ust | 2026-10-06 |
+| E1-D1 | D | Anatomy of a Run: The Terra Luna Crash (Harvard Corporate Governance Forum; Schoar, Makarov, Liu) | https://corpgov.law.harvard.edu/2023/05/22/anatomy-of-a-run-the-terra-luna-crash/ | 2026-10-06 |
+| E1-C2 | C | Uniswap V3 — TVL, Fees, Revenue & Volume (DeFiLlama) | https://defillama.com/protocol/uniswap-v3 | 2026-10-06 |
+| E1-B2 | B | Analysis – Terraform Labs' and LFG's Defense of the UST Price Peg (Jenner & Block / expert report filed in litigation) | https://lfg.org/audit/LFG-Audit-2022-11-14.pdf | 2026-10-06 |
+| E1-A2 | A | Superseding Indictment, USA v. Kohli et al., D. Mass. (24cr10189) — DOJ PDF | https://www.justice.gov/d9/2024-10/kohli_et_al._superseding_indictment_1.pdf | 2026-10-06 |
+| E1-D2 | D | US charges 3 companies, 15 people with cryptocurrency fraud (Reuters, Nate Raymond) | https://www.reuters.com/legal/us-charges-18-people-companies-cryptocurrency-fraud-2024-10-09/ | 2026-10-06 |
+| E1-C3 | C | Uniswap V4 — TVL, Fees, Revenue & Volume (DeFiLlama) | https://defillama.com/protocol/uniswap-v4 | 2026-10-06 |
+| E1-B3 | B | Public Version – Investigation IOC-Beanstalk (Intelligence on Chain, commissioned by Beanstalk DAO) | https://img1.wsimg.com/blobby/go/84879eef-009a-49e3-bec7-d2ea2f962a66/downloads/Public%20Version%20-%20Investigation%20IOC-Beanstalk.pdf | 2026-10-06 |
+| E1-D3 | D | How did a hacker steal over $600 million from a crypto gaming blockchain? (Ars Technica) | https://arstechnica.com/gaming/2022/03/how-did-a-hacker-steal-over-600-million-from-a-crypto-gaming-blockchain/ | 2026-10-06 |
+| E1-C4 | C | Aave V3 — TVL, Fees & Revenue (DeFiLlama) | https://defillama.com/protocol/aave-v3 | 2026-10-06 |
+| E1-B4 | B | DeFi targeted by State Sponsored Adversaries: The Ronin Hack (Forta Network post-mortem) | https://forta.org/blog/ronin-hack | 2026-10-06 |
+| E1-D4 | D | Examining UST's Collapse (Galaxy Research, Alex Thorn) | https://www.galaxy.com/insights/research/examining-ust-collapse | 2026-10-06 |
+| E1-C5 | C | Aave totals: supplied/borrowed across all markets (Aavescan) | https://aavescan.com/protocol/totals | 2026-10-06 |
+| E1-B5 | B | Unpacking the $625M Ronin Network Heist: Independent Postmortem (LCTO) | https://articles.lcto.org/articles/unpacking-the-625m-ronin-network-heist-independent-postmortem | 2026-10-06 |
+| E1-C6 | C | Lido — TVL, Fees & Revenue (DeFiLlama) | https://defillama.com/protocol/lido | 2026-10-06 |
+| E1-C7 | C | stETH yield/holder pool page — 629.0k holders (DeFiLlama yields) | https://defillama.com/yields/pool/747c1d2a-c668-4682-b9f9-296708a3dd90 | 2026-10-06 |
+| E1-C9 | C | Arbitrum One — TVS, UOPS, risk rosette, upgrade log (L2BEAT) | https://l2beat.com/layer2s/projects/arbitrum | 2026-10-06 |
+| E2-A1 | D | "Blockchain Lifecycle Prediction — Dead Coins", Kuehn & Adnan, arXiv:2610.01379 (preprint) — source of the >52% token-death base rate and the 0.98→0.5 | https://arxiv.org/abs/2610.01379 | 2026-10-06 |
+| E2-C1 | C | Electric Capital — **Open Dev Data** platform documentation (methodology for Monthly Active Developers, developer segments, commit fingerprinting, can | https://opendevdata.org/ | 2026-10-06 |
+| E2-D1 | D | 1kx — **Onchain Revenue Report H1 2025** (full draft): 1,244 protocols, 2020–Q3 2025; ~400 protocols >$1M annualised fees; 20 protocols >$10M value to | https://www.datocms-assets.com/65672/1761822830-1kx-revenue-report-full-draft.pdf | 2026-10-06 |
+| E2-A2 | A | FBI press release: "Cryptocurrency and AI Scams Bilk Americans of Billions — FBI releases annual internet crime complaint report" (2025 IC3 report: 1, | https://www.fbi.gov/news/press-releases/cryptocurrency-and-ai-scams-bilk-americans-of-billions | 2026-10-06 |
+| E2-C4 | C | CoinGecko — **Trust Score Methodology** (5 components: Liquidity 50%, Cybersecurity 20%, Regulation 15%, Incident 10%, Proof of Reserves 5%; rank-rela | https://support.coingecko.com/hc/en-us/articles/36442561461657-Trust-Score-Methodology | 2026-10-06 |
+| E2-D4 | D | Cong, Li, Tang & Yang — "Crypto Wash Trading", *NBER Working Paper 30783* (2022), published *Management Science* 69(11), 6427–6454 (29 exchanges; wash | https://www.nber.org/papers/w30783 | 2026-10-06 |
+| E2-D5 | D | Falk, Tsoukalas & Zhang — "Can AI Detect Wash Trading? Evidence from NFTs", arXiv:2311.18717v3 (three major NFT exchanges; ~38% (30–40%) of trades and | https://arxiv.org/abs/2311.18717 | 2026-10-06 |
+| E2-D6 | D | Beyer (Oak Security) — "The Audit Gap in Blockchain Security: A Four-Year Empirical Study of Public Audit Findings and Real-World Exploit Incidents",  | https://arxiv.org/abs/2606.15465 | 2026-10-06 |
+| E2-D7 | D | Bourveau, Brendel & Schoenfeld — "Decentralized Finance (DeFi) assurance: early evidence", *Review of Accounting Studies* 29, 2209–2253 (2024), open a | https://link.springer.com/article/10.1007/s11142-024-09834-8 | 2026-10-06 |
+| E2-D8 | D | David, Zhou, Qin, Song, Cavallaro & Gervais — "Do you still need a manual smart contract audit?", arXiv:2306.12338 (benchmark of 52 previously comprom | https://arxiv.org/abs/2306.12338 | 2026-10-06 |
+| E2-D9 | D | Messias, Yaish & Livshits — "Airdrops: Giving Money Away Is Harder Than It Seems", arXiv:2312.02752 (rev. 2026-08) (first comprehensive empirical stud | https://arxiv.org/abs/2312.02752 | 2026-10-06 |
+| E1-C10 | C | Total Value Secured by L2 (L2BEAT) | https://l2beat.com/layer2s/tvs/ | 2026-10-06 |
+| E1-C11 | C | Chainlink — Fees & Revenue (DeFiLlama) | https://defillama.com/protocol/chainlink | 2026-10-06 |
+| E1-C12 | C | Chainlink CCIP bridge volume (DeFiLlama bridge page) | https://defillama.com/bridge/chainlink-ccip | 2026-10-06 |
+| E1-C13 | C | Pendle — TVL, Fees, Revenue & Volume (DeFiLlama) | https://defillama.com/protocol/pendle | 2026-10-06 |
+| E1-C14 | C | State of Filecoin Q3 2025 — storage, deals, datasets, utilization (Messari/Blockworks) | https://messari.io/report/state-of-filecoin-q3-2025 | 2026-10-06 |
+| E1-C15 | C | State of Filecoin Q2 2025 — dataset onboarding, paid deals (Blockworks Intel) | https://app.blockworks.com/report/state-of-filecoin-q2-2025 | 2026-10-06 |
+| E1-C16 | C | Revisiting Beanstalk Farms Exploit (CertiK incident analysis) | https://www.certik.com/blog/revisiting-beanstalk-farms-exploit | 2026-10-06 |
+| E1-C17 | C | Cornell astrophysics simulation data archived on Filecoin via Ramo (Filecoin Foundation case note) | https://fil.org/blog/unlocking-the-cosmos-how-cornell-astrophysicist-uses-ramo-to-store-the-universe-on-filecoin | 2026-10-06 |
+| E1-C18 | C | CCIP Metrics — cumulative transfer volume and fees (Chainlink, on-chain measured) | https://www.chainlinkecosystem.com/ccip-metrics | 2026-10-06 |
+| E2-D10 | D | Li, Chen & Cai — "From Slang to Standards: Consensus-Driven Airdrop Hunter Definition as a Baseline for Cryptocurrency Ecosystem Security and Governan | https://dl.acm.org/doi/abs/10.1145/3772318.3790777 | 2026-10-06 |
+| E2-D11 | D | Ovezik, Karakostas, Milad, Kiayias & Woods — "SoK: Measuring Blockchain Decentralization", arXiv:2501.18279 (ACAC 2025 / Springer LNCS chapter) (measu | https://arxiv.org/abs/2501.18279 | 2026-10-06 |
 | F2 | C | CoinGecko — Trust Score (Basilisk Update) | https://support.coingecko.com/hc/en-us/articles/57645752611865-Trust-Score-Basilisk-Update | 2026-10-06 |
 | F3 | C | CoinGecko — Methodology (version history of Trust Score) | https://www.coingecko.com/en/methodology | 2026-10-06 |
 | F4 | C | CoinGecko — Trust Score 3.0: Proof of Reserves (Assets & Liabilities) | https://support.coingecko.com/hc/en-us/articles/14570182625817-Trust-Score-3-0-Proof-of-Reserves-Assets-Liabilities | 2026-10-06 |
@@ -202,7 +241,6 @@ Tier **E** (blogs, SEO, aggregators, price predictions) is **excluded by policy*
 | F47 | D | de Almeida et al. — Additive-Veto Models for Choice and Ranking MCDA Problems (Applied Mathematical Modelling 30(6)) | https://ideas.repec.org/a/wsi/apjorx/v30y2013i06ns0217595913500267.html | 2026-10-06 |
 | F48 | D | Banihabib — Comparison of Compensatory and non-Compensatory MCDM models (ELECTRE III weight-sensitivity) | https://iranarze.ir/wp-content/uploads/2018/06/E7692-IranArze.pdf | 2026-10-06 |
 | F49 | D | Krumpal — Determinants of social desirability bias in sensitive surveys (Quality & Quantity 47(4)) | https://ideas.repec.org/a/spr/qualqt/v47y2013i4p2025-2047.html | 2026-10-06 |
-| F50 | D | Cong, Li, Tang & Yang — Crypto Wash Trading (NBER WP 30783; Management Science 69(11)) | https://www.nber.org/papers/w30783 | 2026-10-06 |
 | F51 | D | Chen, Lin & Wu — Do cryptocurrency exchanges fake trading volumes? (Physica A 586, 2022) | https://www.sciencedirect.com/science/article/abs/pii/S0378437121006786 | 2026-10-06 |
 | F52 | D | Albo, Lanir, Bak & Rafaeli — Off the Radar: Comparative Evaluation of Radial Visualization Solutions | https://exa.ai/library/publication/n830v4ng3fw | 2026-10-06 |
 | F53 | D | Kantabutra & Tangmanee — Perceptual Bias in Mobile Radar Chart Visualization (2025) | https://exa.ai/library/publication/m24bx6s0mqj | 2026-10-06 |
@@ -238,13 +276,13 @@ Tier **E** (blogs, SEO, aggregators, price predictions) is **excluded by policy*
 | T-A12 | A | SEC Newsroom, SEC Crypto Task Force chairman letter, 13 Mar 2025 (context for CASP/discovery posture) | https://www.sec.gov/files/ctf-input-andreesen-horowitz-2025-03-13.pdf | 2026-10-06 |
 | T-A13 | A | US Treasury / OFAC, *U.S. Treasury Sanctions Notorious Virtual Currency Mixer Tornado Cash* (8 Aug 2022) | https://home.treasury.gov/news/press-releases/jy0916 | 2026-10-06 |
 | T-A14 | A | CFTC Press Release 8822-23, *CFTC Releases FY 2023 Enforcement Results* (7 Nov 2023) — Ooki DAO "person"/unincorporated association holding; 47 digita | https://www.cftc.gov/PressRoom/PressReleases/8822-23 | 2026-10-06 |
-| T-A15 |  | ESMA, *Markets in Crypto-Assets Regulation (MiCA)* — Interim MiCA Register (5 CSVs incl. Non-compliant entities); last update 30 Sep 2026 | https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica | 2026-10-06 |
+| T-A15 | A | ESMA, *Markets in Crypto-Assets Regulation (MiCA)* — Interim MiCA Register (5 CSVs incl. Non-compliant entities); last update 30 Sep 2026 | https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica | 2026-10-06 |
 | T-A16 | A | ESMA Q&A on MiCA scope (Apr 2026): fully decentralised services without an intermediary out of scope | https://www.esma.europa.eu/print/view/pdf/esma_q_a_search_page/page_2?&page=75 | 2026-10-06 |
 | T-A17 | A | ESMA75-453128700-438, *Second Consultation Paper on MiCA* (5 Oct 2023) | https://www.esma.europa.eu/sites/default/files/2023-10/ESMA75-453128700-438_MiCA_Consultation_Paper_2nd_package.pdf | 2026-10-06 |
 | T-A18 | A | DOJ SDNY, *Tornado Cash Founders Charged With Money Laundering and Sanctions Violations* (23 Aug 2023) | https://www.justice.gov/usao-sdny/pr/tornado-cash-founders-charged-money-laundering-and-sanctions-violations | 2026-10-06 |
-| T-A18b |  | ESMA, *Disclosure items for the crypto-asset white paper* (name, legal form, registered address, LEI) | https://www.esma.europa.eu/publications-and-data/interactive-single-rulebook/mica/disclosure-items-crypto-asset-white-paper-e | 2026-10-06 |
+| T-A18b | A | ESMA, *Disclosure items for the crypto-asset white paper* (name, legal form, registered address, LEI) | https://www.esma.europa.eu/publications-and-data/interactive-single-rulebook/mica/disclosure-items-crypto-asset-white-paper-e | 2026-10-06 |
 | T-A19 | A* | DOJ SDNY, *Founder of Tornado Cash Crypto Mixing Service Convicted of Knowingly Transmitting Criminal Proceeds* (6 Aug 2025) — verdict before Judge Ka | https://www.justice.gov/usao-sdny/pr/founder-tornado-cash-crypto-mixing-service-convicted-knowingly-transmitting-criminal | 2026-10-06 |
-| T-A20 |  | FCA, *Cryptoasset firms: Authorisation, supervision and enforcement* (final rules 30 Jun 2026; applies to firms authorised on/after 25 Oct 2027) | https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation/authorisation-supervision-enforcement | 2026-10-06 |
+| T-A20 | A | FCA, *Cryptoasset firms: Authorisation, supervision and enforcement* (final rules 30 Jun 2026; applies to firms authorised on/after 25 Oct 2027) | https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation/authorisation-supervision-enforcement | 2026-10-06 |
 | T-A21 | A | US Treasury / OFAC, *Treasury Sanctions Cryptocurrency Exchange and Network Enabling Sanctions Evasion and Cyber Criminals* — Garantex re-designation, | https://home.treasury.gov/news/press-releases/sb0225 | 2026-10-06 |
 | T-A22 | A | ASIC Media Release 25-194MR, *High Court grants ASIC special leave to appeal Block Earner decision* (5 Sep 2025) | https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2025-releases/25-194mr-high-court-grants-asic-special-leave-to-appeal-block-earner-decision | 2026-10-06 |
 | T-A23 | A | ASIC Media Release 26-124MR, *ASIC successful in High Court Block Earner appeal* — unanimous 7-0; Corporations Amendment (Digital Assets Framework) Ac | https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-124mr-asic-successful-in-high-court-block-earner-appeal | 2026-10-06 |
@@ -266,13 +304,13 @@ Tier **E** (blogs, SEO, aggregators, price predictions) is **excluded by policy*
 | T-A39 | A | US Treasury, *Report to Congress from the Secretary of the Treasury* on GENIUS Act illicit finance (Mar 2026) | https://home.treasury.gov/system/files/246/GENIUS-Act-Illicit-Finance-Innovation-Congressional-Report-March-2026.pdf | 2026-10-06 |
 | T-A40 | A | SEC, Statement on President Trump Signing the GENIUS Act into Law (18 Jul 2025) | https://www.sec.gov/newsroom/speeches-statements/atkins-statement-genius-act-071825 | 2026-10-06 |
 | T-A41 | A | SEC, *Frequently Asked Questions Relating to Crypto Asset Activities Distributed Ledger Technology* (15 May 2025) — references GENIUS Act, 12 U.S.C. 5 | https://www.sec.gov/rules-regulations/staff-guidance/trading-markets-frequently-asked-questions/frequently-asked-questions-relating-crypto-asset-activities-distributed-ledger-technology | 2026-10-06 |
-| T-A42 |  | Regulation (EU) 2023/1114 (MiCA) full text (EUR-Lex) | https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R1114 | 2026-10-06 |
+| T-A42 | A | Regulation (EU) 2023/1114 (MiCA) full text (EUR-Lex) | https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R1114 | 2026-10-06 |
 | T-A43 | A | ASIC Information Sheet 225 (INFO 225), *Digital assets: Financial products and services* | https://www.asic.gov.au/regulatory-resources/digital-transformation/digital-assets-financial-products-and-services | 2026-10-06 |
 | T-A44 | A | MAS Media Release, *MAS Strengthens Regulatory Measures for Digital Payment Token Services* (23 Nov 2023) | https://www.mas.gov.sg/news/media-releases/2023/mas-strengthens-regulatory-measures-for-digital-payment-token-services | 2026-10-06 |
 | T-A45 | A | CFTC Press Releases 9059-25 / 9060-25, withdrawal of Staff Advisories on virtual currency (28 Mar 2025) | https://www.cftc.gov/PressRoom/PressReleases/9059-25 | 2026-10-06 |
 
 ## Totals
 
-- Unique sources: **260** (from 264 raw citations; 4 URL duplicates collapsed)
-- By tier: A=68, A*=1, B=83, C=45, D=56, E=3
-- Per slice: A=54, B=43, C=50, D=58, F=59
+- Unique sources: **298** (from 311 raw citations; 12 URL duplicates collapsed)
+- By tier: A=74, A*=1, B=88, C=63, D=69, E=3
+- Per slice: A=54, B=43, C=50, D=58, E1=29, E2=18, F=59
